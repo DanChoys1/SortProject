@@ -72,23 +72,18 @@ namespace SortProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-            arr.Remove(Convert.ToInt32(numericUpDown2.Value));
+            arr.Remove(Convert.ToInt32(numericUpDown2.Value) - 1);
 
-            /*dataGridView1.Rows.RemoveAt(0);*/
+            dataGridView1.Columns.RemoveAt(dataGridView1.Columns.Count - 1);
 
-            /*int rowsCount = dataGridView1.Rows.Count;
-            for (int i = 0; i < rowsCount; i++)
-            {
-                dataGridView1.Rows.Remove(dataGridView1.Rows[0]);
-            }*/
+            for (int i = 0; i < arr.Count; i++) {
+                dataGridView1.Columns[i].Name = "Column" + (i + 1).ToString();
+                dataGridView1.Columns[i].HeaderText = (i + 1).ToString();
+                dataGridView1.Columns[i].Tag = i;
 
-            this.dataGridView1.Rows.Clear();  // удаление всех строк
-            int count = this.dataGridView1.Columns.Count;
-            for (int i = 0; i < count; i++)     // цикл удаления всех столбцов
-            {
-                this.dataGridView1.Columns.RemoveAt(0);
+                dataGridView1[i, 0].Value = arr[i];
             }
-
+/*
             for (int i = 0; i < arr.Count; i++)
             {
                 DataGridViewColumn column = new DataGridViewColumn(dataGridView2.Columns[0].CellTemplate);
@@ -100,7 +95,7 @@ namespace SortProject
                 dataGridView1.Columns.Add(column);
 
                 dataGridView1.Rows[0].Cells[i].Value = arr[i];
-            }
+            }*/
         }
     }
 }
