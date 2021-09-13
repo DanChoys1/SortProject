@@ -17,7 +17,7 @@ namespace SortProject
             InitializeComponent();
         }
 
-        List<int> arr = new List<int>();
+        private List<int> arr = new List<int>();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,7 +40,7 @@ namespace SortProject
         {
             arr.Sort();
 
-            for (int i = 0; i < arr.Count; i++)
+            for (int i = 0; i < dataGridView1.Columns.Count; i++)
             {
 
                 if (i < dataGridView2.ColumnCount)
@@ -54,34 +54,22 @@ namespace SortProject
                     dataGridView2.Rows[0].Cells[i].Value = arr[i];
                 }
             }
+
+            while(dataGridView1.Columns.Count < dataGridView2.Columns.Count) {
+                dataGridView2.Columns.RemoveAt(dataGridView2.Columns.Count - 1);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            arr.Remove(Convert.ToInt32(numericUpDown2.Value) - 1);
+            arr.RemoveAt(Convert.ToInt32(numericUpDown2.Value) - 1);
 
             dataGridView1.Columns.RemoveAt(dataGridView1.Columns.Count - 1);
 
             for (int i = 0; i < arr.Count; i++) {
-                dataGridView1.Columns[i].Name = "Column" + (i + 1).ToString();
-                dataGridView1.Columns[i].HeaderText = (i + 1).ToString();
-                dataGridView1.Columns[i].Tag = i;
-
                 dataGridView1[i, 0].Value = arr[i];
             }
-/*
-            for (int i = 0; i < arr.Count; i++)
-            {
-                DataGridViewColumn column = new DataGridViewColumn(dataGridView2.Columns[0].CellTemplate);
 
-                column.Name = "Column" + (i + 1).ToString();
-                column.HeaderText = (i + 1).ToString();
-                column.Tag = i;
-
-                dataGridView1.Columns.Add(column);
-
-                dataGridView1.Rows[0].Cells[i].Value = arr[i];
-            }*/
         }
     }
 }
