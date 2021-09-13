@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using SelectionSort;
+
 namespace SortProject
 {
     public partial class Form1 : Form
@@ -20,7 +22,7 @@ namespace SortProject
             dataGridView3.Rows.Add();
             dataGridView3.Rows.Add();
 
-            dataGridView3[0, 0].Value = "Sort1";
+            dataGridView3[0, 0].Value = "Выбором";
             dataGridView3[0, 1].Value = "Sort2";
             dataGridView3[0, 2].Value = "Sort3";
             dataGridView3[0, 3].Value = "Sort4";
@@ -48,7 +50,11 @@ namespace SortProject
         private void button2_Click(object sender, EventArgs e)
         {
             if (arr.Count > 0) {
-                arr.Sort();
+                Selection sorter = new Selection();
+                sorter.sort(arr);
+
+                dataGridView3[1, 0].Value = sorter.Comparison;
+                dataGridView3[2, 0].Value = sorter.Permutation;
 
                 for (int i = 0; i < arr.Count; i++) {
 
@@ -70,13 +76,23 @@ namespace SortProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (arr.Count > 0) {
+            /*            if (arr.Count > Convert.ToInt32(numericUpDown2.Value) - 1) {
+                            arr.RemoveAt(Convert.ToInt32(numericUpDown2.Value) - 1);
+
+                            dataGridView1.Columns.RemoveAt(dataGridView1.Columns.Count - 1);
+
+                            for (int i = 0; i < arr.Count; i++) {
+                                dataGridView1[i, 0].Value = arr[i];
+                            }
+                        }*/
+
+            if (arr.Count > Convert.ToInt32(numericUpDown2.Value) - 1) {
                 arr.RemoveAt(Convert.ToInt32(numericUpDown2.Value) - 1);
 
-                dataGridView1.Columns.RemoveAt(dataGridView1.Columns.Count - 1);
+                dataGridView1.Columns.RemoveAt(Convert.ToInt32(numericUpDown2.Value) - 1);
 
-                for (int i = 0; i < arr.Count; i++) {
-                    dataGridView1[i, 0].Value = arr[i];
+                for (int i = Convert.ToInt32(numericUpDown2.Value) - 1; i < arr.Count; i++) {
+                    dataGridView1.Columns[i].HeaderText = (i + 1).ToString();
                 }
             }
         }
