@@ -15,6 +15,15 @@ namespace SortProject
         public Form1()
         {
             InitializeComponent();
+
+            dataGridView3.Rows.Add();
+            dataGridView3.Rows.Add();
+            dataGridView3.Rows.Add();
+
+            dataGridView3[0, 0].Value = "Sort1";
+            dataGridView3[0, 1].Value = "Sort2";
+            dataGridView3[0, 2].Value = "Sort3";
+            dataGridView3[0, 3].Value = "Sort4";
         }
 
         private List<int> arr = new List<int>();
