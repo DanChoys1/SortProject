@@ -58,6 +58,7 @@ namespace SortProject
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(274, 53);
@@ -96,6 +97,7 @@ namespace SortProject
             // 
             // dataGridView2
             // 
+            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.Location = new System.Drawing.Point(274, 148);
@@ -208,11 +210,13 @@ namespace SortProject
             // 
             // dataGridView3
             // 
+            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.Column7,
             this.Column8});
+            this.dataGridView3.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView3.Location = new System.Drawing.Point(274, 249);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersVisible = false;
