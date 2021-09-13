@@ -30,14 +30,7 @@ namespace SortProject
 
             if (arr.Count > 5)
             {
-                DataGridViewColumn column = new DataGridViewColumn(dataGridView1.Columns[0].CellTemplate);
-
-                column.Name = "Column" + arr.Count.ToString();
-                column.HeaderText = arr.Count.ToString();
-                column.Tag = arr.Count - 1;
-
-                dataGridView1.Columns.Add(column);
-
+                dataGridView1.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
                 dataGridView1.Rows[0].Cells[arr.Count - 1].Value = arr[arr.Count - 1];
             }
 
@@ -57,14 +50,7 @@ namespace SortProject
 
                 if (i >= dataGridView2.ColumnCount)
                 {
-                    DataGridViewColumn column = new DataGridViewColumn(dataGridView2.Columns[0].CellTemplate);
-
-                    column.Name = "Column" + (i + 1).ToString();
-                    column.HeaderText = (i + 1).ToString();
-                    column.Tag = i;
-
-                    dataGridView2.Columns.Add(column);
-
+                    dataGridView2.Columns.Add("Column" + (i + 1).ToString(), (i + 1).ToString());
                     dataGridView2.Rows[0].Cells[i].Value = arr[i];
                 }
             }
