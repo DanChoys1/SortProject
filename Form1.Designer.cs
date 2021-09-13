@@ -33,11 +33,6 @@ namespace SortProject
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewLinkColumn1 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.dataGridViewLinkColumn2 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.dataGridViewLinkColumn3 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.dataGridViewLinkColumn4 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.dataGridViewLinkColumn5 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.button2 = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.button3 = new System.Windows.Forms.Button();
@@ -49,15 +44,10 @@ namespace SortProject
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
             this.Column6 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -69,12 +59,6 @@ namespace SortProject
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(274, 53);
             this.dataGridView1.Name = "dataGridView1";
@@ -113,12 +97,6 @@ namespace SortProject
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewLinkColumn1,
-            this.dataGridViewLinkColumn2,
-            this.dataGridViewLinkColumn3,
-            this.dataGridViewLinkColumn4,
-            this.dataGridViewLinkColumn5});
             this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.Location = new System.Drawing.Point(274, 148);
             this.dataGridView2.Name = "dataGridView2";
@@ -126,31 +104,6 @@ namespace SortProject
             this.dataGridView2.RowTemplate.Height = 25;
             this.dataGridView2.Size = new System.Drawing.Size(494, 64);
             this.dataGridView2.TabIndex = 6;
-            // 
-            // dataGridViewLinkColumn1
-            // 
-            this.dataGridViewLinkColumn1.HeaderText = "1";
-            this.dataGridViewLinkColumn1.Name = "dataGridViewLinkColumn1";
-            // 
-            // dataGridViewLinkColumn2
-            // 
-            this.dataGridViewLinkColumn2.HeaderText = "2";
-            this.dataGridViewLinkColumn2.Name = "dataGridViewLinkColumn2";
-            // 
-            // dataGridViewLinkColumn3
-            // 
-            this.dataGridViewLinkColumn3.HeaderText = "3";
-            this.dataGridViewLinkColumn3.Name = "dataGridViewLinkColumn3";
-            // 
-            // dataGridViewLinkColumn4
-            // 
-            this.dataGridViewLinkColumn4.HeaderText = "4";
-            this.dataGridViewLinkColumn4.Name = "dataGridViewLinkColumn4";
-            // 
-            // dataGridViewLinkColumn5
-            // 
-            this.dataGridViewLinkColumn5.HeaderText = "5";
-            this.dataGridViewLinkColumn5.Name = "dataGridViewLinkColumn5";
             // 
             // button2
             // 
@@ -267,15 +220,6 @@ namespace SortProject
             this.dataGridView3.Size = new System.Drawing.Size(494, 150);
             this.dataGridView3.TabIndex = 15;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(274, 231);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 15);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Перестановки";
-            // 
             // Column6
             // 
             this.Column6.HeaderText = "Тип сортировки";
@@ -297,40 +241,14 @@ namespace SortProject
             this.Column8.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column8.Width = 130;
             // 
-            // Column1
+            // label5
             // 
-            this.Column1.HeaderText = "1";
-            this.Column1.LinkColor = System.Drawing.Color.Black;
-            this.Column1.Name = "Column1";
-            this.Column1.VisitedLinkColor = System.Drawing.Color.Black;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "2";
-            this.Column2.LinkColor = System.Drawing.Color.Black;
-            this.Column2.Name = "Column2";
-            this.Column2.VisitedLinkColor = System.Drawing.Color.Black;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "3";
-            this.Column3.LinkColor = System.Drawing.Color.Black;
-            this.Column3.Name = "Column3";
-            this.Column3.VisitedLinkColor = System.Drawing.Color.Black;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "4";
-            this.Column4.LinkColor = System.Drawing.Color.Black;
-            this.Column4.Name = "Column4";
-            this.Column4.VisitedLinkColor = System.Drawing.Color.Black;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "5";
-            this.Column5.LinkColor = System.Drawing.Color.Black;
-            this.Column5.Name = "Column5";
-            this.Column5.VisitedLinkColor = System.Drawing.Color.Black;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(274, 231);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 15);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Перестановки";
             // 
             // Form1
             // 
@@ -371,11 +289,6 @@ namespace SortProject
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewLinkColumn dataGridViewLinkColumn1;
-        private System.Windows.Forms.DataGridViewLinkColumn dataGridViewLinkColumn2;
-        private System.Windows.Forms.DataGridViewLinkColumn dataGridViewLinkColumn3;
-        private System.Windows.Forms.DataGridViewLinkColumn dataGridViewLinkColumn4;
-        private System.Windows.Forms.DataGridViewLinkColumn dataGridViewLinkColumn5;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.Button button3;
@@ -386,11 +299,6 @@ namespace SortProject
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewLinkColumn Column1;
-        private System.Windows.Forms.DataGridViewLinkColumn Column2;
-        private System.Windows.Forms.DataGridViewLinkColumn Column3;
-        private System.Windows.Forms.DataGridViewLinkColumn Column4;
-        private System.Windows.Forms.DataGridViewLinkColumn Column5;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridViewLinkColumn Column6;
         private System.Windows.Forms.DataGridViewLinkColumn Column7;
