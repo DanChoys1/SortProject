@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Sort;
 
-namespace Quick
+namespace QuickSort
 {
-    class QuickSort : ISort
+    class Quick : ISort
     {
 
         void Swap(ref List<int> arr, int FirstArgument, int SecondArgument)
