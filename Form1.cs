@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SelectionSort;
+using Sort;
+using BubbleSort;
+using Quick;
 
 namespace SortProject
 {
@@ -20,11 +23,11 @@ namespace SortProject
             dataGridView3.Rows.Add();
             dataGridView3.Rows.Add();
             dataGridView3.Rows.Add();
-
-            dataGridView3[0, 0].Value = "Выбором";
-            dataGridView3[0, 1].Value = "Sort2";
-            dataGridView3[0, 2].Value = "Sort3";
-            dataGridView3[0, 3].Value = "Sort4";
+            
+            dataGridView3[0, 0].Value = "Пузырьком";
+            dataGridView3[0, 1].Value = "Быстрая";
+            dataGridView3[0, 2].Value = "Выбором";
+            dataGridView3[0, 3].Value = "Слиянием";
         }
 
         private void button1_Click(object sender, EventArgs e) {
@@ -42,24 +45,44 @@ namespace SortProject
         }
 
         private void button2_Click(object sender, EventArgs e) {
-            List<int> sortingArr = new List<int>(arr);
+            List<int> bubbleArr = new List<int>(arr);
+            List<int> quickArr = new List<int>(arr);
+            List<int> selectionArr = new List<int>(arr);
+            List<int> margetArr = new List<int>(arr);
 
-            if (sortingArr.Count > 0) {
-                Selection sorter = new Selection();
-                sorter.sort(sortingArr, true);
+            if (arr.Count > 0) {
+                ISort []sorter = {new Bubble(), new QuickSort(), new Selection(), new MergeSort()};
+                /*  selectionSorter.sort(sortingArr, true);
 
-                dataGridView3[1, 0].Value = sorter.Comparison;
-                dataGridView3[2, 0].Value = sorter.Permutation;
+                  dataGridView3[1, 0].Value = sorter.Comparison;
+                  dataGridView3[2, 0].Value = sorter.Permutation;*/
 
-                for (int i = 0; i < sortingArr.Count; i++) {
+                sorter[0].sort(bubbleArr, radioButton1.Checked);
+                dataGridView3[1, 0].Value = sorter[0].Comparison;
+                dataGridView3[2, 0].Value = sorter[0].Permutation;
+
+                sorter[1].sort(quickArr, radioButton1.Checked);
+                dataGridView3[1, 1].Value = sorter[1].Comparison;
+                dataGridView3[2, 1].Value = sorter[1].Permutation;
+
+                sorter[2].sort(selectionArr, radioButton1.Checked);
+                dataGridView3[1, 2].Value = sorter[2].Comparison;
+                dataGridView3[2, 2].Value = sorter[2].Permutation;
+
+                sorter[3].sort(margetArr, radioButton1.Checked);
+                dataGridView3[1, 3].Value = sorter[3].Comparison;
+                dataGridView3[2, 3].Value = sorter[3].Permutation;
+
+
+                for (int i = 0; i < arr.Count; i++) {
 
                     if (i < dataGridView2.ColumnCount) {
-                        dataGridView2.Rows[0].Cells[i].Value = sortingArr[i];
+                        dataGridView2.Rows[0].Cells[i].Value = bubbleArr[i];
                     }
 
                     if (i >= dataGridView2.ColumnCount) {
                         dataGridView2.Columns.Add("Column" + (i + 1).ToString(), (i + 1).ToString());
-                        dataGridView2.Rows[0].Cells[i].Value = sortingArr[i];
+                        dataGridView2.Rows[0].Cells[i].Value = bubbleArr[i];
                     }
                 }
 

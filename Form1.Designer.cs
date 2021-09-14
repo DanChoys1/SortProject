@@ -65,16 +65,19 @@ namespace SortProject
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(274, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(391, 88);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(494, 64);
+            this.dataGridView1.Size = new System.Drawing.Size(706, 107);
             this.dataGridView1.TabIndex = 3;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(12, 53);
+            this.numericUpDown1.Location = new System.Drawing.Point(17, 88);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
@@ -86,14 +89,15 @@ namespace SortProject
             54210,
             -2147483648});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 23);
+            this.numericUpDown1.Size = new System.Drawing.Size(171, 31);
             this.numericUpDown1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(150, 53);
+            this.button1.Location = new System.Drawing.Point(214, 88);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(107, 38);
             this.button1.TabIndex = 5;
             this.button1.Text = "Ввести";
             this.button1.UseVisualStyleBackColor = true;
@@ -104,18 +108,21 @@ namespace SortProject
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.Location = new System.Drawing.Point(274, 148);
+            this.dataGridView2.Location = new System.Drawing.Point(391, 247);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(494, 64);
+            this.dataGridView2.Size = new System.Drawing.Size(706, 107);
             this.dataGridView2.TabIndex = 6;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 249);
+            this.button2.Location = new System.Drawing.Point(17, 415);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 47);
+            this.button2.Size = new System.Drawing.Size(304, 78);
             this.button2.TabIndex = 7;
             this.button2.Text = "Сортировать";
             this.button2.UseVisualStyleBackColor = true;
@@ -123,7 +130,8 @@ namespace SortProject
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(12, 107);
+            this.numericUpDown2.Location = new System.Drawing.Point(17, 178);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
@@ -135,7 +143,7 @@ namespace SortProject
             0,
             0});
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 23);
+            this.numericUpDown2.Size = new System.Drawing.Size(171, 31);
             this.numericUpDown2.TabIndex = 8;
             this.numericUpDown2.Value = new decimal(new int[] {
             1,
@@ -145,9 +153,10 @@ namespace SortProject
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(150, 107);
+            this.button3.Location = new System.Drawing.Point(214, 178);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(107, 38);
             this.button3.TabIndex = 9;
             this.button3.Text = "Удалить";
             this.button3.UseVisualStyleBackColor = true;
@@ -155,61 +164,67 @@ namespace SortProject
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.оПрограммеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1143, 35);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.файлToolStripMenuItem.Text = "Тест";
             // 
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(141, 29);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 35);
+            this.label1.Location = new System.Drawing.Point(17, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 15);
+            this.label1.Size = new System.Drawing.Size(195, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ввести новый элемент";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 89);
+            this.label2.Location = new System.Drawing.Point(17, 148);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 15);
+            this.label2.Size = new System.Drawing.Size(242, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "Удалить элемент по индексу";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(274, 35);
+            this.label3.Location = new System.Drawing.Point(391, 58);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 15);
+            this.label3.Size = new System.Drawing.Size(166, 25);
             this.label3.TabIndex = 13;
             this.label3.Text = "Введённый массив";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(274, 130);
+            this.label4.Location = new System.Drawing.Point(391, 217);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 15);
+            this.label4.Size = new System.Drawing.Size(227, 25);
             this.label4.TabIndex = 14;
             this.label4.Text = "Отсортированный массив";
             // 
@@ -222,18 +237,21 @@ namespace SortProject
             this.Column2,
             this.Column3});
             this.dataGridView3.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView3.Location = new System.Drawing.Point(274, 249);
+            this.dataGridView3.Location = new System.Drawing.Point(391, 415);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView3.MultiSelect = false;
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowHeadersVisible = false;
+            this.dataGridView3.RowHeadersWidth = 62;
             this.dataGridView3.RowTemplate.Height = 25;
-            this.dataGridView3.Size = new System.Drawing.Size(494, 125);
+            this.dataGridView3.Size = new System.Drawing.Size(706, 208);
             this.dataGridView3.TabIndex = 15;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Тип сортировки";
+            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 223;
@@ -241,6 +259,7 @@ namespace SortProject
             // Column2
             // 
             this.Column2.HeaderText = "Кол-во сравнений";
+            this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Width = 134;
@@ -248,6 +267,7 @@ namespace SortProject
             // Column3
             // 
             this.Column3.HeaderText = "Кол-во перестановок";
+            this.Column3.MinimumWidth = 8;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             this.Column3.Width = 134;
@@ -255,9 +275,10 @@ namespace SortProject
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(274, 231);
+            this.label5.Location = new System.Drawing.Point(391, 385);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 15);
+            this.label5.Size = new System.Drawing.Size(128, 25);
             this.label5.TabIndex = 16;
             this.label5.Text = "Перестановки";
             // 
@@ -265,9 +286,11 @@ namespace SortProject
             // 
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 148);
+            this.groupBox1.Location = new System.Drawing.Point(17, 247);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(213, 83);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(304, 138);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Сортировать по";
@@ -275,20 +298,22 @@ namespace SortProject
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(9, 48);
+            this.radioButton2.Location = new System.Drawing.Point(13, 80);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(83, 19);
+            this.radioButton2.Size = new System.Drawing.Size(123, 29);
             this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "убыванию";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(9, 23);
+            this.radioButton1.Checked = true;
+            this.radioButton1.Location = new System.Drawing.Point(13, 38);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(97, 19);
+            this.radioButton1.Size = new System.Drawing.Size(145, 29);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "возрастанию";
@@ -296,10 +321,10 @@ namespace SortProject
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 411);
+            this.ClientSize = new System.Drawing.Size(1143, 685);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView3);
@@ -317,6 +342,7 @@ namespace SortProject
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
