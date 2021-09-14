@@ -10,13 +10,13 @@ namespace BubbleSort {
         public override List<int> sort(List<int> arr, bool isAscending) {
             int size = arr.Count;
 
-            for (int k = 0; k < size; k++) {
+            for (int k = size - 1; k > -1; k--) {
                 int checking = 0;
 
-                for (int i = 0; i < size - 1; i++) {
+                for (int i = 0; i < k; i++) {
                     this.comparison++;
 
-                    if (isAscending == true) {
+                    if (isAscending) {
 
                         if (arr[i] > arr[i + 1]) {
                             int temp = arr[i];
