@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Sort;
+using SortProject;
 
 namespace SelectionSort {
     /// <summary>
@@ -8,23 +9,31 @@ namespace SelectionSort {
     /// </summary>
     class Selection : ISort {
 
-        public override List<int> sort(List<int> arr) {
+        public override List<int> sort(List<int> arr, bool isAscending) {
             int size = arr.Count;
+           
             for (int i = 0; i < size - 1; i++) {
-                // Find the minimum element in unsorted array
-                int min_idx = i;
+                // Find the minimum (maximum) element in unsorted array
+                int pivot_idx = i;
                 for (int j = i + 1; j < size; j++) {
-                    if (arr[j] < arr[min_idx]) {
-                        min_idx = j;
+                    if (isAscending) {
+                        if (arr[j] < arr[pivot_idx]) {
+                            pivot_idx = j;
+                        }
+                    } else {
+                        if (arr[j] > arr[pivot_idx]) {
+                            pivot_idx = j;
+                        }
                     }
+                    
                 }
 
 
-                // Swap the found minimum element with the first
+                // Swap the found minimum (maximum) element with the first
                 // element
-                if (min_idx != i) {
-                    int temp = arr[min_idx];
-                    arr[min_idx] = arr[i];
+                if (pivot_idx != i) {
+                    int temp = arr[pivot_idx];
+                    arr[pivot_idx] = arr[i];
                     arr[i] = temp;
                     this.permutation++;
                 }

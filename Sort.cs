@@ -7,7 +7,7 @@ namespace Sort {
         protected int comparison = 0;
         protected int permutation = 0;
 
-        public abstract List<int> sort(List<int> arr);
+        public abstract List<int> sort(List<int> arr, bool isAscending);
 
         public int Comparison {
             get { return comparison; }
