@@ -108,17 +108,19 @@ namespace SortProject
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e) {
             MessageBox.Show("Работу выполнили:\nАзаров Д.К.\nАбрамян Л.К.\nБездудина О.Е.\nГаланов М.Э.", "О программе");
         }
+
+        private void файлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Test test = new Test();
+
+            if (test.Tests())
+            {
+                MessageBox.Show("Все тесты были пройдены.", "Тестирование");
+            }
+            else
+            {
+                MessageBox.Show("Тестирование не было пройдено.", "Тестирование");
+            }
+        }
     }
 }
-
-/*
-private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e) {
-    Test test = new Test();
-
-    if (test.Tests()) {
-        MessageBox.Show("Все тесты были пройдены.", "Тестирование");
-    } else {
-        MessageBox.Show("Тестирование не было пройдено.", "Тестирование");
-    }
-
-}*/
