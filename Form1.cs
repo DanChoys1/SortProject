@@ -12,10 +12,10 @@ using SelectionSort;
 
 namespace SortProject
 {
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
+    public partial class Form1 : Form {
+        private List<int> arr = new List<int>();
+
+        public Form1() {
             InitializeComponent();
 
             dataGridView3.Rows.Add();
@@ -28,43 +28,39 @@ namespace SortProject
             dataGridView3[0, 3].Value = "Sort4";
         }
 
-        private List<int> arr = new List<int>();
-
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button1_Click(object sender, EventArgs e) {
             arr.Add(Convert.ToInt32(numericUpDown1.Value));
 
-            if (arr.Count <= dataGridView1.Columns.Count)
-            {
+            if (arr.Count <= dataGridView1.Columns.Count) {
                 dataGridView1.Rows[0].Cells[arr.Count - 1].Value = arr[arr.Count - 1];
             }
 
-            if (arr.Count > dataGridView1.Columns.Count)
-            {
+            if (arr.Count > dataGridView1.Columns.Count) {
                 dataGridView1.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
                 dataGridView1.Rows[0].Cells[arr.Count - 1].Value = arr[arr.Count - 1];
             }
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (arr.Count > 0) {
+        private void button2_Click(object sender, EventArgs e) {
+            List<int> sortingArr = new List<int>(arr);
+
+            if (sortingArr.Count > 0) {
                 Selection sorter = new Selection();
-                sorter.sort(arr);
+                sorter.sort(sortingArr);
 
                 dataGridView3[1, 0].Value = sorter.Comparison;
                 dataGridView3[2, 0].Value = sorter.Permutation;
 
-                for (int i = 0; i < arr.Count; i++) {
+                for (int i = 0; i < sortingArr.Count; i++) {
 
                     if (i < dataGridView2.ColumnCount) {
-                        dataGridView2.Rows[0].Cells[i].Value = arr[i];
+                        dataGridView2.Rows[0].Cells[i].Value = sortingArr[i];
                     }
 
                     if (i >= dataGridView2.ColumnCount) {
                         dataGridView2.Columns.Add("Column" + (i + 1).ToString(), (i + 1).ToString());
-                        dataGridView2.Rows[0].Cells[i].Value = arr[i];
+                        dataGridView2.Rows[0].Cells[i].Value = sortingArr[i];
                     }
                 }
 
