@@ -47,7 +47,7 @@ namespace SortProject
 
             if (sortingArr.Count > 0) {
                 Selection sorter = new Selection();
-                sorter.sort(sortingArr);
+                sorter.sort(sortingArr, true);
 
                 dataGridView3[1, 0].Value = sorter.Comparison;
                 dataGridView3[2, 0].Value = sorter.Permutation;
@@ -72,16 +72,6 @@ namespace SortProject
 
         private void button3_Click(object sender, EventArgs e)
         {
-            /*            if (arr.Count > Convert.ToInt32(numericUpDown2.Value) - 1) {
-                            arr.RemoveAt(Convert.ToInt32(numericUpDown2.Value) - 1);
-
-                            dataGridView1.Columns.RemoveAt(dataGridView1.Columns.Count - 1);
-
-                            for (int i = 0; i < arr.Count; i++) {
-                                dataGridView1[i, 0].Value = arr[i];
-                            }
-                        }*/
-
             if (arr.Count > Convert.ToInt32(numericUpDown2.Value) - 1) {
                 arr.RemoveAt(Convert.ToInt32(numericUpDown2.Value) - 1);
 
@@ -91,6 +81,10 @@ namespace SortProject
                     dataGridView1.Columns[i].HeaderText = (i + 1).ToString();
                 }
             }
+        }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e) {
+            MessageBox.Show("Работу выполнили:\nАзаров Д.К.\nАбрамян Л.К.\nБездудина О.Е.\nГаланов М.Э.", "О программе");
         }
     }
 }
