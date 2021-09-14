@@ -7,7 +7,7 @@ using Sort;
 namespace BubbleSort {
     class Bubble : ISort {
 
-        public override List<int> sort(List<int> arr) {
+        public override List<int> sort(List<int> arr, bool isAscending) {
             int size = arr.Count;
             for (int k = 0; k < size; k++) {
                 int checking = 0;
