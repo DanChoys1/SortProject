@@ -11,8 +11,7 @@ namespace SortProject
 {
     class Test
     {
-
-        bool Tests()
+       public bool Tests()
         {
             List<int> arrTest = new List<int>();
 
@@ -21,7 +20,7 @@ namespace SortProject
 
             for (int i = 0; i < numberTests; i++)
             {
-                arrTest[i] = rand.Next(-1000, 1000);
+                arrTest.Add(rand.Next(-1000, 1000));
             }
             List<int> BubbleArr = new List<int>(arrTest);
             Bubble bubbleSorter = new Bubble();

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using SelectionSort;
 using Sort;
 using BubbleSort;
-using Quick;
+using QuickSort;
 
 namespace SortProject
 {
@@ -51,7 +51,7 @@ namespace SortProject
             List<int> margetArr = new List<int>(arr);
 
             if (arr.Count > 0) {
-                ISort []sorter = {new Bubble(), new QuickSort(), new Selection(), new MergeSort()};
+                ISort []sorter = {new Bubble(), new Quick(), new Selection(), new MergeSort()};
                 /*  selectionSorter.sort(sortingArr, true);
 
                   dataGridView3[1, 0].Value = sorter.Comparison;
@@ -110,3 +110,15 @@ namespace SortProject
         }
     }
 }
+
+/*
+private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e) {
+    Test test = new Test();
+
+    if (test.Tests()) {
+        MessageBox.Show("Все тесты были пройдены.", "Тестирование");
+    } else {
+        MessageBox.Show("Тестирование не было пройдено.", "Тестирование");
+    }
+
+}*/

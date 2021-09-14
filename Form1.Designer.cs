@@ -174,7 +174,7 @@ namespace SortProject
             this.menuStrip1.Size = new System.Drawing.Size(1143, 35);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
-            // 
+            //
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
