@@ -21,12 +21,12 @@ namespace SortProject {
                 real_sort(arr, m + 1, r, isAscending);
 
                 // Merge the sorted halves
-                merge(arr, l, m, r);
+                merge(arr, l, m, r, isAscending);
             }
             return arr;
         }
 
-        void merge(List<int> arr, int l, int m, int r) {
+        void merge(List<int> arr, int l, int m, int r, bool isAscending) {
             // Find sizes of two
             // subarrays to be merged
             int n1 = m - l + 1;
@@ -56,14 +56,25 @@ namespace SortProject {
             while (i < n1 && j < n2) {
                 this.comparison++;
                 this.permutation++;
-                if (L[i] <= R[j]) {
-                    arr[k] = L[i];
-                    i++;
+                if (isAscending) {
+                    if (L[i] <= R[j]) {
+                        arr[k] = L[i];
+                        i++;
+                    } else {
+                        arr[k] = R[j];
+                        j++;
+                    }
+                    k++;
                 } else {
-                    arr[k] = R[j];
-                    j++;
+                    if (L[i] > R[j]) {
+                        arr[k] = L[i];
+                        i++;
+                    } else {
+                        arr[k] = R[j];
+                        j++;
+                    }
+                    k++;
                 }
-                k++;
             }
 
             // Copy remaining elements
