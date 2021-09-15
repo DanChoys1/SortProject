@@ -11,7 +11,6 @@ namespace Sort {
 
         public int Comparison {
             get { return comparison; }
-
         }
 
         public int Permutation {

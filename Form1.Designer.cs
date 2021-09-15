@@ -1,8 +1,6 @@
 ﻿
-namespace SortProject
-{
-    partial class Form1
-    {
+namespace SortProject {
+    partial class manualInputForm {
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -12,12 +10,12 @@ namespace SortProject
         ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+
+            if (disposing && (components != null))  {
                 components.Dispose();
             }
+
             base.Dispose(disposing);
         }
 
@@ -27,223 +25,213 @@ namespace SortProject
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button3 = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+        private void InitializeComponent() {
+            this.enterArrayDataGridView = new System.Windows.Forms.DataGridView();
+            this.newItemNumeric = new System.Windows.Forms.NumericUpDown();
+            this.enterButton = new System.Windows.Forms.Button();
+            this.sortArrayDataGridView = new System.Windows.Forms.DataGridView();
+            this.sortButton = new System.Windows.Forms.Button();
+            this.deleteItemNumeric = new System.Windows.Forms.NumericUpDown();
+            this.deleteButton = new System.Windows.Forms.Button();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.newItemLabel = new System.Windows.Forms.Label();
+            this.deleteLabel = new System.Windows.Forms.Label();
+            this.enterTableLabel = new System.Windows.Forms.Label();
+            this.sortedArrayLabel = new System.Windows.Forms.Label();
+            this.premutationComparisonDataGridView = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.label = new System.Windows.Forms.Label();
+            this.sortingForGroupBox = new System.Windows.Forms.GroupBox();
+            this.downRadioButton = new System.Windows.Forms.RadioButton();
+            this.upRadioButton = new System.Windows.Forms.RadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deleteItemNumeric)).BeginInit();
+            this.menuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.premutationComparisonDataGridView)).BeginInit();
+            this.sortingForGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // enterArrayDataGridView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.Location = new System.Drawing.Point(313, 70);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(565, 86);
-            this.dataGridView1.TabIndex = 3;
+            this.enterArrayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.enterArrayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.enterArrayDataGridView.GridColor = System.Drawing.SystemColors.Control;
+            this.enterArrayDataGridView.Location = new System.Drawing.Point(274, 52);
+            this.enterArrayDataGridView.Name = "enterArrayDataGridView";
+            this.enterArrayDataGridView.RowHeadersVisible = false;
+            this.enterArrayDataGridView.RowHeadersWidth = 62;
+            this.enterArrayDataGridView.RowTemplate.Height = 25;
+            this.enterArrayDataGridView.Size = new System.Drawing.Size(494, 64);
+            this.enterArrayDataGridView.TabIndex = 3;
             // 
-            // numericUpDown1
+            // newItemNumeric
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(14, 70);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.newItemNumeric.Location = new System.Drawing.Point(12, 52);
+            this.newItemNumeric.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
             54210,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.newItemNumeric.Minimum = new decimal(new int[] {
             -1593835520,
             466537709,
             54210,
             -2147483648});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(137, 27);
-            this.numericUpDown1.TabIndex = 4;
+            this.newItemNumeric.Name = "newItemNumeric";
+            this.newItemNumeric.Size = new System.Drawing.Size(120, 23);
+            this.newItemNumeric.TabIndex = 4;
             // 
-            // button1
+            // enterButton
             // 
-            this.button1.Location = new System.Drawing.Point(171, 70);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Ввести";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.enterButton.Location = new System.Drawing.Point(150, 52);
+            this.enterButton.Name = "enterButton";
+            this.enterButton.Size = new System.Drawing.Size(75, 22);
+            this.enterButton.TabIndex = 5;
+            this.enterButton.Text = "Ввести";
+            this.enterButton.UseVisualStyleBackColor = true;
+            this.enterButton.Click += new System.EventHandler(this.enterButton_Click);
             // 
-            // dataGridView2
+            // sortArrayDataGridView
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.Location = new System.Drawing.Point(313, 198);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(565, 86);
-            this.dataGridView2.TabIndex = 6;
+            this.sortArrayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.sortArrayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sortArrayDataGridView.GridColor = System.Drawing.SystemColors.Control;
+            this.sortArrayDataGridView.Location = new System.Drawing.Point(274, 148);
+            this.sortArrayDataGridView.Name = "sortArrayDataGridView";
+            this.sortArrayDataGridView.RowHeadersVisible = false;
+            this.sortArrayDataGridView.RowHeadersWidth = 62;
+            this.sortArrayDataGridView.RowTemplate.Height = 25;
+            this.sortArrayDataGridView.Size = new System.Drawing.Size(494, 64);
+            this.sortArrayDataGridView.TabIndex = 6;
             // 
-            // button2
+            // sortButton
             // 
-            this.button2.Location = new System.Drawing.Point(14, 332);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 62);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Сортировать";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.sortButton.Location = new System.Drawing.Point(12, 249);
+            this.sortButton.Name = "sortButton";
+            this.sortButton.Size = new System.Drawing.Size(213, 46);
+            this.sortButton.TabIndex = 7;
+            this.sortButton.Text = "Сортировать";
+            this.sortButton.UseVisualStyleBackColor = true;
+            this.sortButton.Click += new System.EventHandler(this.sortButton_Click);
             // 
-            // numericUpDown2
+            // deleteItemNumeric
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(14, 142);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.deleteItemNumeric.Location = new System.Drawing.Point(12, 106);
+            this.deleteItemNumeric.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
             54210,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.deleteItemNumeric.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(137, 27);
-            this.numericUpDown2.TabIndex = 8;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.deleteItemNumeric.Name = "deleteItemNumeric";
+            this.deleteItemNumeric.Size = new System.Drawing.Size(120, 23);
+            this.deleteItemNumeric.TabIndex = 8;
+            this.deleteItemNumeric.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // button3
+            // deleteButton
             // 
-            this.button3.Location = new System.Drawing.Point(171, 142);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(86, 30);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Удалить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.deleteButton.Location = new System.Drawing.Point(150, 106);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 22);
+            this.deleteButton.TabIndex = 9;
+            this.deleteButton.Text = "Удалить";
+            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // menuStrip1
+            // menuStrip
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.оПрограммеToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(914, 28);
-            this.menuStrip1.TabIndex = 10;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip.TabIndex = 10;
+            this.menuStrip.Text = "menuStrip1";
             // 
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
             this.файлToolStripMenuItem.Text = "Тест";
-            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
+            this.файлToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
-            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.aboutProgramToolStripMenuItem_Click);
             // 
-            // label1
+            // newItemLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Ввести новый элемент";
+            this.newItemLabel.AutoSize = true;
+            this.newItemLabel.Location = new System.Drawing.Point(12, 34);
+            this.newItemLabel.Name = "newItemLabel";
+            this.newItemLabel.Size = new System.Drawing.Size(132, 15);
+            this.newItemLabel.TabIndex = 11;
+            this.newItemLabel.Text = "Ввести новый элемент";
             // 
-            // label2
+            // deleteLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 20);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Удалить элемент по индексу";
+            this.deleteLabel.AutoSize = true;
+            this.deleteLabel.Location = new System.Drawing.Point(12, 88);
+            this.deleteLabel.Name = "deleteLabel";
+            this.deleteLabel.Size = new System.Drawing.Size(164, 15);
+            this.deleteLabel.TabIndex = 12;
+            this.deleteLabel.Text = "Удалить элемент по индексу";
             // 
-            // label3
+            // enterTableLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(313, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 20);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Введённый массив";
+            this.enterTableLabel.AutoSize = true;
+            this.enterTableLabel.Location = new System.Drawing.Point(274, 34);
+            this.enterTableLabel.Name = "enterTableLabel";
+            this.enterTableLabel.Size = new System.Drawing.Size(111, 15);
+            this.enterTableLabel.TabIndex = 13;
+            this.enterTableLabel.Text = "Введённый массив";
             // 
-            // label4
+            // sortedArrayLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(313, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 20);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Отсортированный массив";
+            this.sortedArrayLabel.AutoSize = true;
+            this.sortedArrayLabel.Location = new System.Drawing.Point(274, 130);
+            this.sortedArrayLabel.Name = "sortedArrayLabel";
+            this.sortedArrayLabel.Size = new System.Drawing.Size(152, 15);
+            this.sortedArrayLabel.TabIndex = 14;
+            this.sortedArrayLabel.Text = "Отсортированный массив";
             // 
-            // dataGridView3
+            // premutationComparisonDataGridView
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.premutationComparisonDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.premutationComparisonDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.premutationComparisonDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataGridView3.GridColor = System.Drawing.SystemColors.Control;
-            this.dataGridView3.Location = new System.Drawing.Point(313, 332);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.dataGridView3.MultiSelect = false;
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowHeadersWidth = 62;
-            this.dataGridView3.RowTemplate.Height = 25;
-            this.dataGridView3.Size = new System.Drawing.Size(565, 166);
-            this.dataGridView3.TabIndex = 15;
+            this.premutationComparisonDataGridView.GridColor = System.Drawing.SystemColors.Control;
+            this.premutationComparisonDataGridView.Location = new System.Drawing.Point(274, 249);
+            this.premutationComparisonDataGridView.MultiSelect = false;
+            this.premutationComparisonDataGridView.Name = "premutationComparisonDataGridView";
+            this.premutationComparisonDataGridView.ReadOnly = true;
+            this.premutationComparisonDataGridView.RowHeadersVisible = false;
+            this.premutationComparisonDataGridView.RowHeadersWidth = 62;
+            this.premutationComparisonDataGridView.RowTemplate.Height = 25;
+            this.premutationComparisonDataGridView.Size = new System.Drawing.Size(494, 125);
+            this.premutationComparisonDataGridView.TabIndex = 15;
             // 
             // Column1
             // 
@@ -269,115 +257,110 @@ namespace SortProject
             this.Column3.ReadOnly = true;
             this.Column3.Width = 134;
             // 
-            // label5
+            // label
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(313, 308);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 20);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Перестановки";
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(274, 231);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(85, 15);
+            this.label.TabIndex = 16;
+            this.label.Text = "Перестановки";
             // 
-            // groupBox1
+            // sortingForGroupBox
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(14, 198);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(243, 110);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Сортировать по";
+            this.sortingForGroupBox.Controls.Add(this.downRadioButton);
+            this.sortingForGroupBox.Controls.Add(this.upRadioButton);
+            this.sortingForGroupBox.Location = new System.Drawing.Point(12, 148);
+            this.sortingForGroupBox.Name = "sortingForGroupBox";
+            this.sortingForGroupBox.Size = new System.Drawing.Size(213, 82);
+            this.sortingForGroupBox.TabIndex = 17;
+            this.sortingForGroupBox.TabStop = false;
+            this.sortingForGroupBox.Text = "Сортировать по";
             // 
-            // radioButton2
+            // downRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(10, 64);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(103, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "убыванию";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.downRadioButton.AutoSize = true;
+            this.downRadioButton.Location = new System.Drawing.Point(9, 48);
+            this.downRadioButton.Name = "downRadioButton";
+            this.downRadioButton.Size = new System.Drawing.Size(83, 19);
+            this.downRadioButton.TabIndex = 1;
+            this.downRadioButton.Text = "убыванию";
+            this.downRadioButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // upRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(10, 30);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(122, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "возрастанию";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.upRadioButton.AutoSize = true;
+            this.upRadioButton.Checked = true;
+            this.upRadioButton.Location = new System.Drawing.Point(9, 22);
+            this.upRadioButton.Name = "upRadioButton";
+            this.upRadioButton.Size = new System.Drawing.Size(97, 19);
+            this.upRadioButton.TabIndex = 0;
+            this.upRadioButton.TabStop = true;
+            this.upRadioButton.Text = "возрастанию";
+            this.upRadioButton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // manualInputForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(914, 548);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(800, 411);
+            this.Controls.Add(this.sortingForGroupBox);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.premutationComparisonDataGridView);
+            this.Controls.Add(this.sortedArrayLabel);
+            this.Controls.Add(this.enterTableLabel);
+            this.Controls.Add(this.deleteLabel);
+            this.Controls.Add(this.newItemLabel);
+            this.Controls.Add(this.deleteButton);
+            this.Controls.Add(this.deleteItemNumeric);
+            this.Controls.Add(this.sortButton);
+            this.Controls.Add(this.sortArrayDataGridView);
+            this.Controls.Add(this.enterButton);
+            this.Controls.Add(this.newItemNumeric);
+            this.Controls.Add(this.enterArrayDataGridView);
+            this.Controls.Add(this.menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Form1";
+            this.Name = "manualInputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SortProgram";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deleteItemNumeric)).EndInit();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.premutationComparisonDataGridView)).EndInit();
+            this.sortingForGroupBox.ResumeLayout(false);
+            this.sortingForGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.DataGridView enterArrayDataGridView;
+        private System.Windows.Forms.NumericUpDown newItemNumeric;
+        private System.Windows.Forms.Button enterButton;
+        private System.Windows.Forms.DataGridView sortArrayDataGridView;
+        private System.Windows.Forms.Button sortButton;
+        private System.Windows.Forms.NumericUpDown deleteItemNumeric;
+        private System.Windows.Forms.Button deleteButton;
+        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Label newItemLabel;
+        private System.Windows.Forms.Label deleteLabel;
+        private System.Windows.Forms.Label enterTableLabel;
+        private System.Windows.Forms.Label sortedArrayLabel;
+        private System.Windows.Forms.DataGridView premutationComparisonDataGridView;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.GroupBox sortingForGroupBox;
+        private System.Windows.Forms.RadioButton downRadioButton;
+        private System.Windows.Forms.RadioButton upRadioButton;
         private System.Windows.Forms.DataGridViewLinkColumn Column1;
         private System.Windows.Forms.DataGridViewLinkColumn Column2;
         private System.Windows.Forms.DataGridViewLinkColumn Column3;
