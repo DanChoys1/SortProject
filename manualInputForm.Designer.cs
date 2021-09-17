@@ -160,7 +160,7 @@ namespace SortProject {
             this.оПрограммеToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip.Size = new System.Drawing.Size(803, 24);
             this.menuStrip.TabIndex = 10;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -304,7 +304,7 @@ namespace SortProject {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 432);
+            this.ClientSize = new System.Drawing.Size(803, 437);
             this.Controls.Add(this.sortingForGroupBox);
             this.Controls.Add(this.label);
             this.Controls.Add(this.premutationComparisonDataGridView);
