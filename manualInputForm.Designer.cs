@@ -26,6 +26,7 @@ namespace SortProject {
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(manualInputForm));
             this.enterArrayDataGridView = new System.Windows.Forms.DataGridView();
             this.newItemNumeric = new System.Windows.Forms.NumericUpDown();
             this.enterButton = new System.Windows.Forms.Button();
@@ -33,9 +34,6 @@ namespace SortProject {
             this.sortButton = new System.Windows.Forms.Button();
             this.deleteItemNumeric = new System.Windows.Forms.NumericUpDown();
             this.deleteButton = new System.Windows.Forms.Button();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newItemLabel = new System.Windows.Forms.Label();
             this.deleteLabel = new System.Windows.Forms.Label();
             this.enterTableLabel = new System.Windows.Forms.Label();
@@ -48,13 +46,35 @@ namespace SortProject {
             this.sortingForGroupBox = new System.Windows.Forms.GroupBox();
             this.downRadioButton = new System.Windows.Forms.RadioButton();
             this.upRadioButton = new System.Windows.Forms.RadioButton();
+            this.manualInputFormButton = new System.Windows.Forms.Button();
+            this.randomInputFormButton = new System.Windows.Forms.Button();
+            this.testButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.closeProgramButton = new System.Windows.Forms.Button();
+            this.leftBorderLabel = new System.Windows.Forms.Label();
+            this.rightLabel = new System.Windows.Forms.Label();
+            this.selectionArrayBoundariesLabel = new System.Windows.Forms.Label();
+            this.amountElementsLabel = new System.Windows.Forms.Label();
+            this.inputSortDescendingRandomArrButton = new System.Windows.Forms.Button();
+            this.inputSortAscendingRandomArrButton = new System.Windows.Forms.Button();
+            this.inputRandomArrButton = new System.Windows.Forms.Button();
+            this.amountElementsNumeric = new System.Windows.Forms.NumericUpDown();
+            this.leftBorderNumeric = new System.Windows.Forms.NumericUpDown();
+            this.rightBorderNumeric = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deleteItemNumeric)).BeginInit();
-            this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.premutationComparisonDataGridView)).BeginInit();
             this.sortingForGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amountElementsNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftBorderNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightBorderNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // enterArrayDataGridView
@@ -62,7 +82,7 @@ namespace SortProject {
             this.enterArrayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.enterArrayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.enterArrayDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.enterArrayDataGridView.Location = new System.Drawing.Point(274, 52);
+            this.enterArrayDataGridView.Location = new System.Drawing.Point(333, 81);
             this.enterArrayDataGridView.Name = "enterArrayDataGridView";
             this.enterArrayDataGridView.RowHeadersVisible = false;
             this.enterArrayDataGridView.RowHeadersWidth = 62;
@@ -72,7 +92,7 @@ namespace SortProject {
             // 
             // newItemNumeric
             // 
-            this.newItemNumeric.Location = new System.Drawing.Point(12, 52);
+            this.newItemNumeric.Location = new System.Drawing.Point(71, 81);
             this.newItemNumeric.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
@@ -89,7 +109,7 @@ namespace SortProject {
             // 
             // enterButton
             // 
-            this.enterButton.Location = new System.Drawing.Point(150, 52);
+            this.enterButton.Location = new System.Drawing.Point(209, 81);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(75, 22);
             this.enterButton.TabIndex = 5;
@@ -102,7 +122,7 @@ namespace SortProject {
             this.sortArrayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.sortArrayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sortArrayDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.sortArrayDataGridView.Location = new System.Drawing.Point(274, 148);
+            this.sortArrayDataGridView.Location = new System.Drawing.Point(333, 177);
             this.sortArrayDataGridView.Name = "sortArrayDataGridView";
             this.sortArrayDataGridView.RowHeadersVisible = false;
             this.sortArrayDataGridView.RowHeadersWidth = 62;
@@ -112,7 +132,7 @@ namespace SortProject {
             // 
             // sortButton
             // 
-            this.sortButton.Location = new System.Drawing.Point(12, 249);
+            this.sortButton.Location = new System.Drawing.Point(71, 278);
             this.sortButton.Name = "sortButton";
             this.sortButton.Size = new System.Drawing.Size(213, 46);
             this.sortButton.TabIndex = 7;
@@ -122,7 +142,7 @@ namespace SortProject {
             // 
             // deleteItemNumeric
             // 
-            this.deleteItemNumeric.Location = new System.Drawing.Point(12, 106);
+            this.deleteItemNumeric.Location = new System.Drawing.Point(71, 135);
             this.deleteItemNumeric.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
@@ -144,7 +164,7 @@ namespace SortProject {
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(150, 106);
+            this.deleteButton.Location = new System.Drawing.Point(209, 135);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 22);
             this.deleteButton.TabIndex = 9;
@@ -152,36 +172,10 @@ namespace SortProject {
             this.deleteButton.UseVisualStyleBackColor = true;
             this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // menuStrip
-            // 
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.оПрограммеToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1237, 24);
-            this.menuStrip.TabIndex = 10;
-            this.menuStrip.Text = "menuStrip1";
-            // 
-            // файлToolStripMenuItem
-            // 
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.файлToolStripMenuItem.Text = "Тест";
-            this.файлToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
-            // 
-            // оПрограммеToolStripMenuItem
-            // 
-            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.оПрограммеToolStripMenuItem.Text = "О программе";
-            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.aboutProgramToolStripMenuItem_Click);
-            // 
             // newItemLabel
             // 
             this.newItemLabel.AutoSize = true;
-            this.newItemLabel.Location = new System.Drawing.Point(12, 34);
+            this.newItemLabel.Location = new System.Drawing.Point(71, 63);
             this.newItemLabel.Name = "newItemLabel";
             this.newItemLabel.Size = new System.Drawing.Size(132, 15);
             this.newItemLabel.TabIndex = 11;
@@ -190,7 +184,7 @@ namespace SortProject {
             // deleteLabel
             // 
             this.deleteLabel.AutoSize = true;
-            this.deleteLabel.Location = new System.Drawing.Point(12, 88);
+            this.deleteLabel.Location = new System.Drawing.Point(71, 117);
             this.deleteLabel.Name = "deleteLabel";
             this.deleteLabel.Size = new System.Drawing.Size(164, 15);
             this.deleteLabel.TabIndex = 12;
@@ -199,7 +193,7 @@ namespace SortProject {
             // enterTableLabel
             // 
             this.enterTableLabel.AutoSize = true;
-            this.enterTableLabel.Location = new System.Drawing.Point(274, 34);
+            this.enterTableLabel.Location = new System.Drawing.Point(333, 63);
             this.enterTableLabel.Name = "enterTableLabel";
             this.enterTableLabel.Size = new System.Drawing.Size(111, 15);
             this.enterTableLabel.TabIndex = 13;
@@ -208,7 +202,7 @@ namespace SortProject {
             // sortedArrayLabel
             // 
             this.sortedArrayLabel.AutoSize = true;
-            this.sortedArrayLabel.Location = new System.Drawing.Point(274, 130);
+            this.sortedArrayLabel.Location = new System.Drawing.Point(333, 159);
             this.sortedArrayLabel.Name = "sortedArrayLabel";
             this.sortedArrayLabel.Size = new System.Drawing.Size(152, 15);
             this.sortedArrayLabel.TabIndex = 14;
@@ -223,7 +217,7 @@ namespace SortProject {
             this.Column2,
             this.Column3});
             this.premutationComparisonDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.premutationComparisonDataGridView.Location = new System.Drawing.Point(274, 249);
+            this.premutationComparisonDataGridView.Location = new System.Drawing.Point(333, 278);
             this.premutationComparisonDataGridView.MultiSelect = false;
             this.premutationComparisonDataGridView.Name = "premutationComparisonDataGridView";
             this.premutationComparisonDataGridView.ReadOnly = true;
@@ -260,7 +254,7 @@ namespace SortProject {
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(274, 231);
+            this.label.Location = new System.Drawing.Point(333, 260);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(85, 15);
             this.label.TabIndex = 16;
@@ -270,7 +264,7 @@ namespace SortProject {
             // 
             this.sortingForGroupBox.Controls.Add(this.downRadioButton);
             this.sortingForGroupBox.Controls.Add(this.upRadioButton);
-            this.sortingForGroupBox.Location = new System.Drawing.Point(12, 148);
+            this.sortingForGroupBox.Location = new System.Drawing.Point(71, 177);
             this.sortingForGroupBox.Name = "sortingForGroupBox";
             this.sortingForGroupBox.Size = new System.Drawing.Size(213, 82);
             this.sortingForGroupBox.TabIndex = 17;
@@ -299,12 +293,215 @@ namespace SortProject {
             this.upRadioButton.Text = "возрастанию";
             this.upRadioButton.UseVisualStyleBackColor = true;
             // 
+            // manualInputFormButton
+            // 
+            this.manualInputFormButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.manualInputFormButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manualInputFormButton.BackgroundImage")));
+            this.manualInputFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.manualInputFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manualInputFormButton.Location = new System.Drawing.Point(0, 50);
+            this.manualInputFormButton.Name = "manualInputFormButton";
+            this.manualInputFormButton.Size = new System.Drawing.Size(50, 150);
+            this.manualInputFormButton.TabIndex = 20;
+            this.manualInputFormButton.UseVisualStyleBackColor = false;
+            this.manualInputFormButton.Click += new System.EventHandler(this.manualInputFormButton_Click);
+            // 
+            // randomInputFormButton
+            // 
+            this.randomInputFormButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("randomInputFormButton.BackgroundImage")));
+            this.randomInputFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.randomInputFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.randomInputFormButton.Location = new System.Drawing.Point(0, 200);
+            this.randomInputFormButton.Name = "randomInputFormButton";
+            this.randomInputFormButton.Size = new System.Drawing.Size(50, 150);
+            this.randomInputFormButton.TabIndex = 21;
+            this.randomInputFormButton.UseVisualStyleBackColor = true;
+            this.randomInputFormButton.Click += new System.EventHandler(this.randomInputFormButton_Click);
+            // 
+            // testButton
+            // 
+            this.testButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("testButton.BackgroundImage")));
+            this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.testButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.testButton.Location = new System.Drawing.Point(0, 350);
+            this.testButton.Name = "testButton";
+            this.testButton.Size = new System.Drawing.Size(50, 150);
+            this.testButton.TabIndex = 22;
+            this.testButton.UseVisualStyleBackColor = true;
+            this.testButton.Click += new System.EventHandler(this.testButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 450);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
+            this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
+            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(900, 50);
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(333, 440);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(494, 23);
+            this.textBox1.TabIndex = 25;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(333, 422);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Выводы";
+            // 
+            // closeProgramButton
+            // 
+            this.closeProgramButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeProgramButton.BackgroundImage")));
+            this.closeProgramButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.closeProgramButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeProgramButton.Location = new System.Drawing.Point(801, -1);
+            this.closeProgramButton.Name = "closeProgramButton";
+            this.closeProgramButton.Size = new System.Drawing.Size(51, 51);
+            this.closeProgramButton.TabIndex = 27;
+            this.closeProgramButton.UseVisualStyleBackColor = true;
+            this.closeProgramButton.Click += new System.EventHandler(this.closeProgramButton_Click);
+            // 
+            // leftBorderLabel
+            // 
+            this.leftBorderLabel.AutoSize = true;
+            this.leftBorderLabel.Location = new System.Drawing.Point(80, 140);
+            this.leftBorderLabel.Name = "leftBorderLabel";
+            this.leftBorderLabel.Size = new System.Drawing.Size(19, 15);
+            this.leftBorderLabel.TabIndex = 38;
+            this.leftBorderLabel.Text = "от";
+            this.leftBorderLabel.Visible = false;
+            // 
+            // rightLabel
+            // 
+            this.rightLabel.AutoSize = true;
+            this.rightLabel.Location = new System.Drawing.Point(169, 140);
+            this.rightLabel.Name = "rightLabel";
+            this.rightLabel.Size = new System.Drawing.Size(20, 15);
+            this.rightLabel.TabIndex = 37;
+            this.rightLabel.Text = "до";
+            this.rightLabel.Visible = false;
+            // 
+            // selectionArrayBoundariesLabel
+            // 
+            this.selectionArrayBoundariesLabel.AutoSize = true;
+            this.selectionArrayBoundariesLabel.Location = new System.Drawing.Point(71, 118);
+            this.selectionArrayBoundariesLabel.Name = "selectionArrayBoundariesLabel";
+            this.selectionArrayBoundariesLabel.Size = new System.Drawing.Size(236, 15);
+            this.selectionArrayBoundariesLabel.TabIndex = 36;
+            this.selectionArrayBoundariesLabel.Text = "Выберите границы значечний элементов";
+            this.selectionArrayBoundariesLabel.Visible = false;
+            // 
+            // amountElementsLabel
+            // 
+            this.amountElementsLabel.AutoSize = true;
+            this.amountElementsLabel.Location = new System.Drawing.Point(71, 63);
+            this.amountElementsLabel.Name = "amountElementsLabel";
+            this.amountElementsLabel.Size = new System.Drawing.Size(213, 15);
+            this.amountElementsLabel.TabIndex = 35;
+            this.amountElementsLabel.Text = "Выберите кол-во элементов массива";
+            this.amountElementsLabel.Visible = false;
+            // 
+            // inputSortDescendingRandomArrButton
+            // 
+            this.inputSortDescendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inputSortDescendingRandomArrButton.Location = new System.Drawing.Point(71, 397);
+            this.inputSortDescendingRandomArrButton.Name = "inputSortDescendingRandomArrButton";
+            this.inputSortDescendingRandomArrButton.Size = new System.Drawing.Size(236, 57);
+            this.inputSortDescendingRandomArrButton.TabIndex = 31;
+            this.inputSortDescendingRandomArrButton.Text = "Ввод сортированного массива (убывание)";
+            this.inputSortDescendingRandomArrButton.UseVisualStyleBackColor = true;
+            this.inputSortDescendingRandomArrButton.Visible = false;
+            this.inputSortDescendingRandomArrButton.Click += new System.EventHandler(this.inputSortDescendingRandomArrButton_Click);
+            // 
+            // inputSortAscendingRandomArrButton
+            // 
+            this.inputSortAscendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inputSortAscendingRandomArrButton.Location = new System.Drawing.Point(71, 334);
+            this.inputSortAscendingRandomArrButton.Name = "inputSortAscendingRandomArrButton";
+            this.inputSortAscendingRandomArrButton.Size = new System.Drawing.Size(236, 57);
+            this.inputSortAscendingRandomArrButton.TabIndex = 30;
+            this.inputSortAscendingRandomArrButton.Text = "Ввод сортированного массива (возрастание)";
+            this.inputSortAscendingRandomArrButton.UseVisualStyleBackColor = true;
+            this.inputSortAscendingRandomArrButton.Visible = false;
+            this.inputSortAscendingRandomArrButton.Click += new System.EventHandler(this.inputSortAscendingRandomArrButton_Click);
+            // 
+            // inputRandomArrButton
+            // 
+            this.inputRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inputRandomArrButton.Location = new System.Drawing.Point(71, 280);
+            this.inputRandomArrButton.Name = "inputRandomArrButton";
+            this.inputRandomArrButton.Size = new System.Drawing.Size(236, 48);
+            this.inputRandomArrButton.TabIndex = 29;
+            this.inputRandomArrButton.Text = "Ввод не сортированного массива";
+            this.inputRandomArrButton.UseVisualStyleBackColor = true;
+            this.inputRandomArrButton.Visible = false;
+            this.inputRandomArrButton.Click += new System.EventHandler(this.inputRandomArrButton_Click);
+            // 
+            // amountElementsNumeric
+            // 
+            this.amountElementsNumeric.Location = new System.Drawing.Point(105, 81);
+            this.amountElementsNumeric.Name = "amountElementsNumeric";
+            this.amountElementsNumeric.Size = new System.Drawing.Size(147, 23);
+            this.amountElementsNumeric.TabIndex = 39;
+            // 
+            // leftBorderNumeric
+            // 
+            this.leftBorderNumeric.Location = new System.Drawing.Point(105, 138);
+            this.leftBorderNumeric.Name = "leftBorderNumeric";
+            this.leftBorderNumeric.Size = new System.Drawing.Size(58, 23);
+            this.leftBorderNumeric.TabIndex = 40;
+            // 
+            // rightBorderNumeric
+            // 
+            this.rightBorderNumeric.Location = new System.Drawing.Point(195, 138);
+            this.rightBorderNumeric.Name = "rightBorderNumeric";
+            this.rightBorderNumeric.Size = new System.Drawing.Size(58, 23);
+            this.rightBorderNumeric.TabIndex = 41;
+            // 
             // manualInputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1237, 464);
+            this.ClientSize = new System.Drawing.Size(850, 500);
+            this.Controls.Add(this.rightBorderNumeric);
+            this.Controls.Add(this.leftBorderNumeric);
+            this.Controls.Add(this.amountElementsNumeric);
+            this.Controls.Add(this.leftBorderLabel);
+            this.Controls.Add(this.rightLabel);
+            this.Controls.Add(this.selectionArrayBoundariesLabel);
+            this.Controls.Add(this.amountElementsLabel);
+            this.Controls.Add(this.inputSortDescendingRandomArrButton);
+            this.Controls.Add(this.inputSortAscendingRandomArrButton);
+            this.Controls.Add(this.inputRandomArrButton);
+            this.Controls.Add(this.closeProgramButton);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.testButton);
+            this.Controls.Add(this.randomInputFormButton);
+            this.Controls.Add(this.manualInputFormButton);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sortingForGroupBox);
             this.Controls.Add(this.label);
             this.Controls.Add(this.premutationComparisonDataGridView);
@@ -319,9 +516,7 @@ namespace SortProject {
             this.Controls.Add(this.enterButton);
             this.Controls.Add(this.newItemNumeric);
             this.Controls.Add(this.enterArrayDataGridView);
-            this.Controls.Add(this.menuStrip);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "manualInputForm";
@@ -331,11 +526,14 @@ namespace SortProject {
             ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.deleteItemNumeric)).EndInit();
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.premutationComparisonDataGridView)).EndInit();
             this.sortingForGroupBox.ResumeLayout(false);
             this.sortingForGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.amountElementsNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leftBorderNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rightBorderNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,9 +547,6 @@ namespace SortProject {
         private System.Windows.Forms.Button sortButton;
         private System.Windows.Forms.NumericUpDown deleteItemNumeric;
         private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.Label newItemLabel;
         private System.Windows.Forms.Label deleteLabel;
         private System.Windows.Forms.Label enterTableLabel;
@@ -364,6 +559,24 @@ namespace SortProject {
         private System.Windows.Forms.DataGridViewLinkColumn Column1;
         private System.Windows.Forms.DataGridViewLinkColumn Column2;
         private System.Windows.Forms.DataGridViewLinkColumn Column3;
+        private System.Windows.Forms.Button manualInputFormButton;
+        private System.Windows.Forms.Button randomInputFormButton;
+        private System.Windows.Forms.Button testButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button closeProgramButton;
+        private System.Windows.Forms.Label leftBorderLabel;
+        private System.Windows.Forms.Label rightLabel;
+        private System.Windows.Forms.Label selectionArrayBoundariesLabel;
+        private System.Windows.Forms.Label amountElementsLabel;
+        private System.Windows.Forms.Button inputSortDescendingRandomArrButton;
+        private System.Windows.Forms.Button inputSortAscendingRandomArrButton;
+        private System.Windows.Forms.Button inputRandomArrButton;
+        private System.Windows.Forms.NumericUpDown amountElementsNumeric;
+        private System.Windows.Forms.NumericUpDown leftBorderNumeric;
+        private System.Windows.Forms.NumericUpDown rightBorderNumeric;
     }
 }
 

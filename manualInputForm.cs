@@ -14,6 +14,7 @@ using QuickSort;
 
 namespace SortProject {
     public partial class manualInputForm : Form {
+
         private List<int> arr = new List<int>();
 
         public manualInputForm() {
@@ -99,11 +100,57 @@ namespace SortProject {
             }
         }
 
-        private void aboutProgramToolStripMenuItem_Click(object sender, EventArgs e) {
-            MessageBox.Show("Работу выполнили:\nАзаров Д.К.\nАбрамян Л.К.\nБездудина О.Е.\nГаланов М.Э.", "О программе");
+        private void manualInputFormButton_Click(object sender, EventArgs e) {
+            Control [] manualInputObject = { newItemLabel, deleteLabel, enterButton, deleteButton, 
+                                            sortButton, newItemNumeric, deleteItemNumeric};
+
+            Control[] randomInputObject = { amountElementsLabel, selectionArrayBoundariesLabel, rightLabel,
+                                            leftBorderLabel, amountElementsNumeric, leftBorderNumeric, rightBorderNumeric, 
+                                            inputRandomArrButton, inputSortAscendingRandomArrButton, inputSortDescendingRandomArrButton};
+
+            for (int i = 0; i < randomInputObject.Length; i++) {
+
+                if (randomInputObject[i].Visible) {
+                    randomInputObject[i].Visible = false;
+                }
+
+            }
+
+            for (int i = 0; i < manualInputObject.Length; i++) {
+
+                if (!manualInputObject[i].Visible) {
+                    manualInputObject[i].Visible = true;
+                }
+
+            }
         }
 
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e) {
+        private void randomInputFormButton_Click(object sender, EventArgs e) {
+            Control[] manualInputObject = { newItemLabel, deleteLabel, enterButton, deleteButton,
+                                            sortButton, newItemNumeric, deleteItemNumeric};
+
+            Control[] randomInputObject = { amountElementsLabel, selectionArrayBoundariesLabel, rightLabel,
+                                            leftBorderLabel, amountElementsNumeric, leftBorderNumeric, rightBorderNumeric,
+                                            inputRandomArrButton, inputSortAscendingRandomArrButton, inputSortDescendingRandomArrButton};
+
+            for (int i = 0; i < manualInputObject.Length; i++) {
+
+                if (manualInputObject[i].Visible) {
+                    manualInputObject[i].Visible = false;
+                }
+
+            }
+
+            for (int i = 0; i < randomInputObject.Length; i++) {
+
+                if (!randomInputObject[i].Visible) {
+                    randomInputObject[i].Visible = true;
+                }
+
+            }
+        }
+
+        private void testButton_Click(object sender, EventArgs e) {
             Test test = new Test();
 
             if (test.Tests()) {
@@ -113,5 +160,80 @@ namespace SortProject {
             }
         }
 
+        private void closeProgramButton_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
+
+        private void inputRandomArrButton_Click(object sender, EventArgs e) {   
+            Random rand = new Random();
+
+            if(enterArrayDataGridView.Columns.Count > 0) {
+                enterArrayDataGridView.Columns.Clear();
+            }
+
+            if (arr.Count > 0) {
+                arr.Clear();
+            }
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                arr.Add(rand.Next(Convert.ToInt32(leftBorderNumeric.Value), Convert.ToInt32(rightBorderNumeric.Value) + 1));
+
+                enterArrayDataGridView.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
+                enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
+            }
+
+            sortButton_Click(sender, e);
+        }
+
+        private void inputSortAscendingRandomArrButton_Click(object sender, EventArgs e) {
+            Random rand = new Random();
+
+            if (enterArrayDataGridView.Columns.Count > 0) {
+                enterArrayDataGridView.Columns.Clear();
+            }
+
+            if (arr.Count > 0) {
+                arr.Clear();
+            }
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                arr.Add(rand.Next(Convert.ToInt32(leftBorderNumeric.Value), Convert.ToInt32(rightBorderNumeric.Value) + 1));
+            }
+
+            arr.Sort();
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                enterArrayDataGridView.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
+                enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
+            }
+
+            sortButton_Click(sender, e);
+        }
+
+        private void inputSortDescendingRandomArrButton_Click(object sender, EventArgs e) {
+            Random rand = new Random();
+
+            if (enterArrayDataGridView.Columns.Count > 0) {
+                enterArrayDataGridView.Columns.Clear();
+            }
+
+            if (arr.Count > 0) {
+                arr.Clear();
+            }
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                arr.Add(rand.Next(Convert.ToInt32(leftBorderNumeric.Value), Convert.ToInt32(rightBorderNumeric.Value) + 1));
+            }
+
+            arr.Sort();
+            arr.Reverse();
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                enterArrayDataGridView.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
+                enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
+            }
+
+            sortButton_Click(sender, e);
+        }
     }
 }
