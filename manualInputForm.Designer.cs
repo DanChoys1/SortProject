@@ -349,7 +349,7 @@ namespace SortProject {
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(803, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(852, 50);
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
@@ -376,7 +376,7 @@ namespace SortProject {
             // 
             this.closeProgramButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeProgramButton.BackgroundImage")));
             this.closeProgramButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.closeProgramButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeProgramButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.closeProgramButton.Location = new System.Drawing.Point(801, -1);
             this.closeProgramButton.Name = "closeProgramButton";
             this.closeProgramButton.Size = new System.Drawing.Size(51, 51);
@@ -417,6 +417,7 @@ namespace SortProject {
             // amountElementsLabel
             // 
             this.amountElementsLabel.AutoSize = true;
+            this.amountElementsLabel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.amountElementsLabel.Location = new System.Drawing.Point(71, 63);
             this.amountElementsLabel.Name = "amountElementsLabel";
             this.amountElementsLabel.Size = new System.Drawing.Size(213, 15);

@@ -20,6 +20,18 @@ namespace SortProject {
         public manualInputForm() {
             InitializeComponent();
 
+            newItemLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            deleteLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            enterTableLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            sortedArrayLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            label.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            label1.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            leftBorderLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            rightLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            selectionArrayBoundariesLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            amountElementsLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            sortingForGroupBox.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+
             premutationComparisonDataGridView.Rows.Add();
             premutationComparisonDataGridView.Rows.Add();
             premutationComparisonDataGridView.Rows.Add();
@@ -28,6 +40,31 @@ namespace SortProject {
             premutationComparisonDataGridView[0, 1].Value = "Быстрая";
             premutationComparisonDataGridView[0, 2].Value = "Выбором";
             premutationComparisonDataGridView[0, 3].Value = "Слиянием";
+        }
+
+        private void manualInputFormButton_Click(object sender, EventArgs e) {
+            Control[] manualInputObject = { newItemLabel, deleteLabel, enterButton, deleteButton,
+                                            sortButton, newItemNumeric, deleteItemNumeric};
+
+            Control[] randomInputObject = { amountElementsLabel, selectionArrayBoundariesLabel, rightLabel,
+                                            leftBorderLabel, amountElementsNumeric, leftBorderNumeric, rightBorderNumeric,
+                                            inputRandomArrButton, inputSortAscendingRandomArrButton, inputSortDescendingRandomArrButton};
+
+            for (int i = 0; i < randomInputObject.Length; i++) {
+
+                if (randomInputObject[i].Visible) {
+                    randomInputObject[i].Visible = false;
+                }
+
+            }
+
+            for (int i = 0; i < manualInputObject.Length; i++) {
+
+                if (!manualInputObject[i].Visible) {
+                    manualInputObject[i].Visible = true;
+                }
+
+            }
         }
 
         private void enterButton_Click(object sender, EventArgs e) {
@@ -45,41 +82,28 @@ namespace SortProject {
         }
 
         private void sortButton_Click(object sender, EventArgs e) {
-            List<int> bubbleArr = new List<int>(arr);
-            List<int> quickArr = new List<int>(arr);
-            List<int> selectionArr = new List<int>(arr);
-            List<int> margetArr = new List<int>(arr);
-
             if (arr.Count > 0) {
                 ISort []sorter = {new Bubble(), new Quick(), new Selection(), new MergeSort()};
+                List<int> copySortArr = new List<int>(arr);
+                copySortArr.Sort();
 
-                sorter[0].sort(bubbleArr, upRadioButton.Checked);
-                premutationComparisonDataGridView[1, 0].Value = sorter[0].Comparison;
-                premutationComparisonDataGridView[2, 0].Value = sorter[0].Permutation;
-
-                sorter[1].sort(quickArr, upRadioButton.Checked);
-                premutationComparisonDataGridView[1, 1].Value = sorter[1].Comparison;
-                premutationComparisonDataGridView[2, 1].Value = sorter[1].Permutation;
-
-                sorter[2].sort(selectionArr, upRadioButton.Checked);
-                premutationComparisonDataGridView[1, 2].Value = sorter[2].Comparison;
-                premutationComparisonDataGridView[2, 2].Value = sorter[2].Permutation;
-
-                sorter[3].sort(margetArr, upRadioButton.Checked);
-                premutationComparisonDataGridView[1, 3].Value = sorter[3].Comparison;
-                premutationComparisonDataGridView[2, 3].Value = sorter[3].Permutation;
-
+                for (int i = 0; i < sorter.Length; i++) {
+                    sorter[i].sort(new List<int>(arr), upRadioButton.Checked);
+                    premutationComparisonDataGridView[1, i].Value = sorter[i].Comparison;
+                    premutationComparisonDataGridView[2, i].Value = sorter[i].Permutation;
+                }
 
                 for (int i = 0; i < arr.Count; i++) {
 
                     if (i < sortArrayDataGridView.ColumnCount) {
-                        sortArrayDataGridView.Rows[0].Cells[i].Value = bubbleArr[i];
+                        sortArrayDataGridView.Rows[0].Cells[i].Value = copySortArr[i];
                     }
 
                     if (i >= sortArrayDataGridView.ColumnCount) {
                         sortArrayDataGridView.Columns.Add("Column" + (i + 1).ToString(), (i + 1).ToString());
-                        sortArrayDataGridView.Rows[0].Cells[i].Value = bubbleArr[i];
+                        sortArrayDataGridView.Rows[0].Cells[i].Value = copySortArr[i];
                     }
+
                 }
 
                 while (enterArrayDataGridView.Columns.Count < sortArrayDataGridView.Columns.Count) {
@@ -96,30 +120,6 @@ namespace SortProject {
 
                 for (int i = Convert.ToInt32(deleteItemNumeric.Value) - 1; i < arr.Count; i++) {
                     enterArrayDataGridView.Columns[i].HeaderText = (i + 1).ToString();
-                }
-            }
-        }
-
-        private void manualInputFormButton_Click(object sender, EventArgs e) {
-            Control [] manualInputObject = { newItemLabel, deleteLabel, enterButton, deleteButton, 
-                                            sortButton, newItemNumeric, deleteItemNumeric};
-
-            Control[] randomInputObject = { amountElementsLabel, selectionArrayBoundariesLabel, rightLabel,
-                                            leftBorderLabel, amountElementsNumeric, leftBorderNumeric, rightBorderNumeric, 
-                                            inputRandomArrButton, inputSortAscendingRandomArrButton, inputSortDescendingRandomArrButton};
-
-            for (int i = 0; i < randomInputObject.Length; i++) {
-
-                if (randomInputObject[i].Visible) {
-                    randomInputObject[i].Visible = false;
-                }
-
-            }
-
-            for (int i = 0; i < manualInputObject.Length; i++) {
-
-                if (!manualInputObject[i].Visible) {
-                    manualInputObject[i].Visible = true;
                 }
 
             }
@@ -148,26 +148,13 @@ namespace SortProject {
                 }
 
             }
+
         }
 
-        private void testButton_Click(object sender, EventArgs e) {
-            Test test = new Test();
-
-            if (test.Tests()) {
-                MessageBox.Show("Все тесты были пройдены.", "Тестирование");
-            } else {
-                MessageBox.Show("Тестирование не было пройдено.", "Тестирование");
-            }
-        }
-
-        private void closeProgramButton_Click(object sender, EventArgs e) {
-            Application.Exit();
-        }
-
-        private void inputRandomArrButton_Click(object sender, EventArgs e) {   
+        private void inputRandomArrButton_Click(object sender, EventArgs e) {
             Random rand = new Random();
 
-            if(enterArrayDataGridView.Columns.Count > 0) {
+            if (enterArrayDataGridView.Columns.Count > 0) {
                 enterArrayDataGridView.Columns.Clear();
             }
 
@@ -236,6 +223,19 @@ namespace SortProject {
             sortButton_Click(sender, e);
         }
 
+        private void testButton_Click(object sender, EventArgs e) {
+            Test test = new Test();
+
+            if (test.Tests()) {
+                MessageBox.Show("Все тесты были пройдены.", "Тестирование");
+            } else {
+                MessageBox.Show("Тестирование не было пройдено.", "Тестирование");
+            }
+        }
+
+        private void closeProgramButton_Click(object sender, EventArgs e) {
+            Application.Exit();
+        }
 
         private bool bDragStatus;
         private Point clickPoint;
@@ -251,8 +251,8 @@ namespace SortProject {
 
         }
 
-        private void pictureBox3_MouseMove(object sender, MouseEventArgs e) 
-            {
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e) {
+
             if (bDragStatus) {
                 Point pointMoveTo;
 
