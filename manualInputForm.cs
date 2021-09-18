@@ -235,5 +235,37 @@ namespace SortProject {
 
             sortButton_Click(sender, e);
         }
+
+
+        private bool bDragStatus;
+        private Point clickPoint;
+
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e) {
+
+            if (e.Button == MouseButtons.Left) {
+                bDragStatus = true;
+                clickPoint = new Point(e.X, e.Y);
+            } else {
+                bDragStatus = false;
+            }
+
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e) 
+            {
+            if (bDragStatus) {
+                Point pointMoveTo;
+
+                pointMoveTo = this.PointToScreen(new Point(e.X, e.Y));
+                pointMoveTo.Offset(-clickPoint.X, -clickPoint.Y);
+
+                this.Location = pointMoveTo;
+            }
+
+        }
+
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e) {
+            bDragStatus = false;
+        }
     }
 }
