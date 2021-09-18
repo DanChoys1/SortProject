@@ -463,6 +463,7 @@ namespace SortProject {
             this.amountElementsNumeric.Name = "amountElementsNumeric";
             this.amountElementsNumeric.Size = new System.Drawing.Size(147, 23);
             this.amountElementsNumeric.TabIndex = 39;
+            this.amountElementsNumeric.Visible = false;
             // 
             // leftBorderNumeric
             // 
@@ -470,6 +471,7 @@ namespace SortProject {
             this.leftBorderNumeric.Name = "leftBorderNumeric";
             this.leftBorderNumeric.Size = new System.Drawing.Size(58, 23);
             this.leftBorderNumeric.TabIndex = 40;
+            this.leftBorderNumeric.Visible = false;
             // 
             // rightBorderNumeric
             // 
@@ -477,6 +479,7 @@ namespace SortProject {
             this.rightBorderNumeric.Name = "rightBorderNumeric";
             this.rightBorderNumeric.Size = new System.Drawing.Size(58, 23);
             this.rightBorderNumeric.TabIndex = 41;
+            this.rightBorderNumeric.Visible = false;
             // 
             // manualInputForm
             // 
