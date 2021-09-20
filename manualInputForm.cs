@@ -190,7 +190,7 @@ namespace SortProject {
             arr.Sort();
 
             for (int i = 0; i < amountElementsNumeric.Value; i++) {
-                enterArrayDataGridView.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
+                enterArrayDataGridView.Columns.Add("Column" + i.ToString(), i.ToString());
                 enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
             }
 
@@ -216,7 +216,7 @@ namespace SortProject {
             arr.Reverse();
 
             for (int i = 0; i < amountElementsNumeric.Value; i++) {
-                enterArrayDataGridView.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
+                enterArrayDataGridView.Columns.Add("Column" + i.ToString(), i.ToString());
                 enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
             }
 
