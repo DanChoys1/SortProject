@@ -82,17 +82,19 @@ namespace SortProject {
             this.enterArrayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.enterArrayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.enterArrayDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.enterArrayDataGridView.Location = new System.Drawing.Point(333, 81);
+            this.enterArrayDataGridView.Location = new System.Drawing.Point(476, 135);
+            this.enterArrayDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.enterArrayDataGridView.Name = "enterArrayDataGridView";
             this.enterArrayDataGridView.RowHeadersVisible = false;
             this.enterArrayDataGridView.RowHeadersWidth = 62;
             this.enterArrayDataGridView.RowTemplate.Height = 25;
-            this.enterArrayDataGridView.Size = new System.Drawing.Size(494, 64);
+            this.enterArrayDataGridView.Size = new System.Drawing.Size(706, 107);
             this.enterArrayDataGridView.TabIndex = 3;
             // 
             // newItemNumeric
             // 
-            this.newItemNumeric.Location = new System.Drawing.Point(71, 81);
+            this.newItemNumeric.Location = new System.Drawing.Point(101, 135);
+            this.newItemNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.newItemNumeric.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
@@ -104,14 +106,15 @@ namespace SortProject {
             54210,
             -2147483648});
             this.newItemNumeric.Name = "newItemNumeric";
-            this.newItemNumeric.Size = new System.Drawing.Size(120, 23);
+            this.newItemNumeric.Size = new System.Drawing.Size(171, 31);
             this.newItemNumeric.TabIndex = 4;
             // 
             // enterButton
             // 
-            this.enterButton.Location = new System.Drawing.Point(209, 81);
+            this.enterButton.Location = new System.Drawing.Point(299, 135);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(75, 22);
+            this.enterButton.Size = new System.Drawing.Size(107, 37);
             this.enterButton.TabIndex = 5;
             this.enterButton.Text = "Ввести";
             this.enterButton.UseVisualStyleBackColor = true;
@@ -122,19 +125,21 @@ namespace SortProject {
             this.sortArrayDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.sortArrayDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sortArrayDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.sortArrayDataGridView.Location = new System.Drawing.Point(333, 177);
+            this.sortArrayDataGridView.Location = new System.Drawing.Point(476, 295);
+            this.sortArrayDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sortArrayDataGridView.Name = "sortArrayDataGridView";
             this.sortArrayDataGridView.RowHeadersVisible = false;
             this.sortArrayDataGridView.RowHeadersWidth = 62;
             this.sortArrayDataGridView.RowTemplate.Height = 25;
-            this.sortArrayDataGridView.Size = new System.Drawing.Size(494, 64);
+            this.sortArrayDataGridView.Size = new System.Drawing.Size(706, 107);
             this.sortArrayDataGridView.TabIndex = 6;
             // 
             // sortButton
             // 
-            this.sortButton.Location = new System.Drawing.Point(71, 278);
+            this.sortButton.Location = new System.Drawing.Point(101, 463);
+            this.sortButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sortButton.Name = "sortButton";
-            this.sortButton.Size = new System.Drawing.Size(213, 46);
+            this.sortButton.Size = new System.Drawing.Size(304, 77);
             this.sortButton.TabIndex = 7;
             this.sortButton.Text = "Сортировать";
             this.sortButton.UseVisualStyleBackColor = true;
@@ -142,7 +147,8 @@ namespace SortProject {
             // 
             // deleteItemNumeric
             // 
-            this.deleteItemNumeric.Location = new System.Drawing.Point(71, 135);
+            this.deleteItemNumeric.Location = new System.Drawing.Point(101, 225);
+            this.deleteItemNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteItemNumeric.Maximum = new decimal(new int[] {
             -1593835520,
             466537709,
@@ -154,7 +160,7 @@ namespace SortProject {
             0,
             0});
             this.deleteItemNumeric.Name = "deleteItemNumeric";
-            this.deleteItemNumeric.Size = new System.Drawing.Size(120, 23);
+            this.deleteItemNumeric.Size = new System.Drawing.Size(171, 31);
             this.deleteItemNumeric.TabIndex = 8;
             this.deleteItemNumeric.Value = new decimal(new int[] {
             1,
@@ -164,9 +170,10 @@ namespace SortProject {
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(209, 135);
+            this.deleteButton.Location = new System.Drawing.Point(299, 225);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(75, 22);
+            this.deleteButton.Size = new System.Drawing.Size(107, 37);
             this.deleteButton.TabIndex = 9;
             this.deleteButton.Text = "Удалить";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -175,36 +182,40 @@ namespace SortProject {
             // newItemLabel
             // 
             this.newItemLabel.AutoSize = true;
-            this.newItemLabel.Location = new System.Drawing.Point(71, 63);
+            this.newItemLabel.Location = new System.Drawing.Point(101, 105);
+            this.newItemLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.newItemLabel.Name = "newItemLabel";
-            this.newItemLabel.Size = new System.Drawing.Size(132, 15);
+            this.newItemLabel.Size = new System.Drawing.Size(195, 25);
             this.newItemLabel.TabIndex = 11;
             this.newItemLabel.Text = "Ввести новый элемент";
             // 
             // deleteLabel
             // 
             this.deleteLabel.AutoSize = true;
-            this.deleteLabel.Location = new System.Drawing.Point(71, 117);
+            this.deleteLabel.Location = new System.Drawing.Point(101, 195);
+            this.deleteLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.deleteLabel.Name = "deleteLabel";
-            this.deleteLabel.Size = new System.Drawing.Size(164, 15);
+            this.deleteLabel.Size = new System.Drawing.Size(242, 25);
             this.deleteLabel.TabIndex = 12;
             this.deleteLabel.Text = "Удалить элемент по индексу";
             // 
             // enterTableLabel
             // 
             this.enterTableLabel.AutoSize = true;
-            this.enterTableLabel.Location = new System.Drawing.Point(333, 63);
+            this.enterTableLabel.Location = new System.Drawing.Point(476, 105);
+            this.enterTableLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.enterTableLabel.Name = "enterTableLabel";
-            this.enterTableLabel.Size = new System.Drawing.Size(111, 15);
+            this.enterTableLabel.Size = new System.Drawing.Size(166, 25);
             this.enterTableLabel.TabIndex = 13;
             this.enterTableLabel.Text = "Введённый массив";
             // 
             // sortedArrayLabel
             // 
             this.sortedArrayLabel.AutoSize = true;
-            this.sortedArrayLabel.Location = new System.Drawing.Point(333, 159);
+            this.sortedArrayLabel.Location = new System.Drawing.Point(476, 265);
+            this.sortedArrayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sortedArrayLabel.Name = "sortedArrayLabel";
-            this.sortedArrayLabel.Size = new System.Drawing.Size(152, 15);
+            this.sortedArrayLabel.Size = new System.Drawing.Size(227, 25);
             this.sortedArrayLabel.TabIndex = 14;
             this.sortedArrayLabel.Text = "Отсортированный массив";
             // 
@@ -217,14 +228,15 @@ namespace SortProject {
             this.Column2,
             this.Column3});
             this.premutationComparisonDataGridView.GridColor = System.Drawing.SystemColors.Control;
-            this.premutationComparisonDataGridView.Location = new System.Drawing.Point(333, 278);
+            this.premutationComparisonDataGridView.Location = new System.Drawing.Point(476, 463);
+            this.premutationComparisonDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.premutationComparisonDataGridView.MultiSelect = false;
             this.premutationComparisonDataGridView.Name = "premutationComparisonDataGridView";
             this.premutationComparisonDataGridView.ReadOnly = true;
             this.premutationComparisonDataGridView.RowHeadersVisible = false;
             this.premutationComparisonDataGridView.RowHeadersWidth = 62;
             this.premutationComparisonDataGridView.RowTemplate.Height = 25;
-            this.premutationComparisonDataGridView.Size = new System.Drawing.Size(494, 125);
+            this.premutationComparisonDataGridView.Size = new System.Drawing.Size(706, 208);
             this.premutationComparisonDataGridView.TabIndex = 15;
             // 
             // Column1
@@ -254,9 +266,10 @@ namespace SortProject {
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(333, 260);
+            this.label.Location = new System.Drawing.Point(476, 433);
+            this.label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(85, 15);
+            this.label.Size = new System.Drawing.Size(128, 25);
             this.label.TabIndex = 16;
             this.label.Text = "Перестановки";
             // 
@@ -264,9 +277,11 @@ namespace SortProject {
             // 
             this.sortingForGroupBox.Controls.Add(this.downRadioButton);
             this.sortingForGroupBox.Controls.Add(this.upRadioButton);
-            this.sortingForGroupBox.Location = new System.Drawing.Point(71, 177);
+            this.sortingForGroupBox.Location = new System.Drawing.Point(101, 295);
+            this.sortingForGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sortingForGroupBox.Name = "sortingForGroupBox";
-            this.sortingForGroupBox.Size = new System.Drawing.Size(213, 82);
+            this.sortingForGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sortingForGroupBox.Size = new System.Drawing.Size(304, 137);
             this.sortingForGroupBox.TabIndex = 17;
             this.sortingForGroupBox.TabStop = false;
             this.sortingForGroupBox.Text = "Сортировать по";
@@ -274,9 +289,10 @@ namespace SortProject {
             // downRadioButton
             // 
             this.downRadioButton.AutoSize = true;
-            this.downRadioButton.Location = new System.Drawing.Point(9, 48);
+            this.downRadioButton.Location = new System.Drawing.Point(13, 80);
+            this.downRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.downRadioButton.Name = "downRadioButton";
-            this.downRadioButton.Size = new System.Drawing.Size(83, 19);
+            this.downRadioButton.Size = new System.Drawing.Size(123, 29);
             this.downRadioButton.TabIndex = 1;
             this.downRadioButton.Text = "убыванию";
             this.downRadioButton.UseVisualStyleBackColor = true;
@@ -285,9 +301,10 @@ namespace SortProject {
             // 
             this.upRadioButton.AutoSize = true;
             this.upRadioButton.Checked = true;
-            this.upRadioButton.Location = new System.Drawing.Point(9, 22);
+            this.upRadioButton.Location = new System.Drawing.Point(13, 37);
+            this.upRadioButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.upRadioButton.Name = "upRadioButton";
-            this.upRadioButton.Size = new System.Drawing.Size(97, 19);
+            this.upRadioButton.Size = new System.Drawing.Size(145, 29);
             this.upRadioButton.TabIndex = 0;
             this.upRadioButton.TabStop = true;
             this.upRadioButton.Text = "возрастанию";
@@ -299,9 +316,10 @@ namespace SortProject {
             this.manualInputFormButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manualInputFormButton.BackgroundImage")));
             this.manualInputFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.manualInputFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.manualInputFormButton.Location = new System.Drawing.Point(0, 50);
+            this.manualInputFormButton.Location = new System.Drawing.Point(0, 83);
+            this.manualInputFormButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.manualInputFormButton.Name = "manualInputFormButton";
-            this.manualInputFormButton.Size = new System.Drawing.Size(50, 150);
+            this.manualInputFormButton.Size = new System.Drawing.Size(71, 250);
             this.manualInputFormButton.TabIndex = 20;
             this.manualInputFormButton.UseVisualStyleBackColor = false;
             this.manualInputFormButton.Click += new System.EventHandler(this.manualInputFormButton_Click);
@@ -311,9 +329,10 @@ namespace SortProject {
             this.randomInputFormButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("randomInputFormButton.BackgroundImage")));
             this.randomInputFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.randomInputFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.randomInputFormButton.Location = new System.Drawing.Point(0, 200);
+            this.randomInputFormButton.Location = new System.Drawing.Point(0, 333);
+            this.randomInputFormButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.randomInputFormButton.Name = "randomInputFormButton";
-            this.randomInputFormButton.Size = new System.Drawing.Size(50, 150);
+            this.randomInputFormButton.Size = new System.Drawing.Size(71, 250);
             this.randomInputFormButton.TabIndex = 21;
             this.randomInputFormButton.UseVisualStyleBackColor = true;
             this.randomInputFormButton.Click += new System.EventHandler(this.randomInputFormButton_Click);
@@ -323,9 +342,10 @@ namespace SortProject {
             this.testButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("testButton.BackgroundImage")));
             this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.testButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.testButton.Location = new System.Drawing.Point(0, 350);
+            this.testButton.Location = new System.Drawing.Point(0, 583);
+            this.testButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.testButton.Name = "testButton";
-            this.testButton.Size = new System.Drawing.Size(50, 150);
+            this.testButton.Size = new System.Drawing.Size(71, 250);
             this.testButton.TabIndex = 22;
             this.testButton.UseVisualStyleBackColor = true;
             this.testButton.Click += new System.EventHandler(this.testButton_Click);
@@ -335,9 +355,10 @@ namespace SortProject {
             this.pictureBox1.BackColor = System.Drawing.Color.Black;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 50);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 83);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(71, 750);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
@@ -348,8 +369,9 @@ namespace SortProject {
             this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(852, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(1217, 83);
             this.pictureBox3.TabIndex = 24;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox3_MouseDown);
@@ -358,17 +380,20 @@ namespace SortProject {
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(333, 440);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(476, 733);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(494, 23);
+            this.textBox1.Size = new System.Drawing.Size(704, 31);
             this.textBox1.TabIndex = 25;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(333, 422);
+            this.label1.Location = new System.Drawing.Point(476, 703);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 26;
             this.label1.Text = "Выводы";
             // 
@@ -377,9 +402,10 @@ namespace SortProject {
             this.closeProgramButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeProgramButton.BackgroundImage")));
             this.closeProgramButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.closeProgramButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.closeProgramButton.Location = new System.Drawing.Point(801, -1);
+            this.closeProgramButton.Location = new System.Drawing.Point(1144, -2);
+            this.closeProgramButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeProgramButton.Name = "closeProgramButton";
-            this.closeProgramButton.Size = new System.Drawing.Size(51, 51);
+            this.closeProgramButton.Size = new System.Drawing.Size(73, 85);
             this.closeProgramButton.TabIndex = 27;
             this.closeProgramButton.UseVisualStyleBackColor = true;
             this.closeProgramButton.Click += new System.EventHandler(this.closeProgramButton_Click);
@@ -387,9 +413,10 @@ namespace SortProject {
             // leftBorderLabel
             // 
             this.leftBorderLabel.AutoSize = true;
-            this.leftBorderLabel.Location = new System.Drawing.Point(80, 140);
+            this.leftBorderLabel.Location = new System.Drawing.Point(114, 233);
+            this.leftBorderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.leftBorderLabel.Name = "leftBorderLabel";
-            this.leftBorderLabel.Size = new System.Drawing.Size(19, 15);
+            this.leftBorderLabel.Size = new System.Drawing.Size(30, 25);
             this.leftBorderLabel.TabIndex = 38;
             this.leftBorderLabel.Text = "от";
             this.leftBorderLabel.Visible = false;
@@ -397,9 +424,10 @@ namespace SortProject {
             // rightLabel
             // 
             this.rightLabel.AutoSize = true;
-            this.rightLabel.Location = new System.Drawing.Point(169, 140);
+            this.rightLabel.Location = new System.Drawing.Point(241, 233);
+            this.rightLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rightLabel.Name = "rightLabel";
-            this.rightLabel.Size = new System.Drawing.Size(20, 15);
+            this.rightLabel.Size = new System.Drawing.Size(33, 25);
             this.rightLabel.TabIndex = 37;
             this.rightLabel.Text = "до";
             this.rightLabel.Visible = false;
@@ -407,9 +435,10 @@ namespace SortProject {
             // selectionArrayBoundariesLabel
             // 
             this.selectionArrayBoundariesLabel.AutoSize = true;
-            this.selectionArrayBoundariesLabel.Location = new System.Drawing.Point(71, 118);
+            this.selectionArrayBoundariesLabel.Location = new System.Drawing.Point(101, 197);
+            this.selectionArrayBoundariesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.selectionArrayBoundariesLabel.Name = "selectionArrayBoundariesLabel";
-            this.selectionArrayBoundariesLabel.Size = new System.Drawing.Size(236, 15);
+            this.selectionArrayBoundariesLabel.Size = new System.Drawing.Size(349, 25);
             this.selectionArrayBoundariesLabel.TabIndex = 36;
             this.selectionArrayBoundariesLabel.Text = "Выберите границы значечний элементов";
             this.selectionArrayBoundariesLabel.Visible = false;
@@ -418,9 +447,10 @@ namespace SortProject {
             // 
             this.amountElementsLabel.AutoSize = true;
             this.amountElementsLabel.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.amountElementsLabel.Location = new System.Drawing.Point(71, 63);
+            this.amountElementsLabel.Location = new System.Drawing.Point(101, 105);
+            this.amountElementsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.amountElementsLabel.Name = "amountElementsLabel";
-            this.amountElementsLabel.Size = new System.Drawing.Size(213, 15);
+            this.amountElementsLabel.Size = new System.Drawing.Size(316, 25);
             this.amountElementsLabel.TabIndex = 35;
             this.amountElementsLabel.Text = "Выберите кол-во элементов массива";
             this.amountElementsLabel.Visible = false;
@@ -428,9 +458,10 @@ namespace SortProject {
             // inputSortDescendingRandomArrButton
             // 
             this.inputSortDescendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputSortDescendingRandomArrButton.Location = new System.Drawing.Point(71, 397);
+            this.inputSortDescendingRandomArrButton.Location = new System.Drawing.Point(101, 662);
+            this.inputSortDescendingRandomArrButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.inputSortDescendingRandomArrButton.Name = "inputSortDescendingRandomArrButton";
-            this.inputSortDescendingRandomArrButton.Size = new System.Drawing.Size(236, 57);
+            this.inputSortDescendingRandomArrButton.Size = new System.Drawing.Size(337, 95);
             this.inputSortDescendingRandomArrButton.TabIndex = 31;
             this.inputSortDescendingRandomArrButton.Text = "Ввод сортированного массива (убывание)";
             this.inputSortDescendingRandomArrButton.UseVisualStyleBackColor = true;
@@ -440,9 +471,10 @@ namespace SortProject {
             // inputSortAscendingRandomArrButton
             // 
             this.inputSortAscendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputSortAscendingRandomArrButton.Location = new System.Drawing.Point(71, 334);
+            this.inputSortAscendingRandomArrButton.Location = new System.Drawing.Point(101, 557);
+            this.inputSortAscendingRandomArrButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.inputSortAscendingRandomArrButton.Name = "inputSortAscendingRandomArrButton";
-            this.inputSortAscendingRandomArrButton.Size = new System.Drawing.Size(236, 57);
+            this.inputSortAscendingRandomArrButton.Size = new System.Drawing.Size(337, 95);
             this.inputSortAscendingRandomArrButton.TabIndex = 30;
             this.inputSortAscendingRandomArrButton.Text = "Ввод сортированного массива (возрастание)";
             this.inputSortAscendingRandomArrButton.UseVisualStyleBackColor = true;
@@ -452,9 +484,10 @@ namespace SortProject {
             // inputRandomArrButton
             // 
             this.inputRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputRandomArrButton.Location = new System.Drawing.Point(71, 280);
+            this.inputRandomArrButton.Location = new System.Drawing.Point(101, 467);
+            this.inputRandomArrButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.inputRandomArrButton.Name = "inputRandomArrButton";
-            this.inputRandomArrButton.Size = new System.Drawing.Size(236, 48);
+            this.inputRandomArrButton.Size = new System.Drawing.Size(337, 80);
             this.inputRandomArrButton.TabIndex = 29;
             this.inputRandomArrButton.Text = "Ввод не сортированного массива";
             this.inputRandomArrButton.UseVisualStyleBackColor = true;
@@ -463,35 +496,43 @@ namespace SortProject {
             // 
             // amountElementsNumeric
             // 
-            this.amountElementsNumeric.Location = new System.Drawing.Point(105, 81);
+            this.amountElementsNumeric.Location = new System.Drawing.Point(150, 135);
+            this.amountElementsNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.amountElementsNumeric.Maximum = new decimal(new int[] {
+            -1981284352,
+            -1966660860,
+            0,
+            0});
             this.amountElementsNumeric.Name = "amountElementsNumeric";
-            this.amountElementsNumeric.Size = new System.Drawing.Size(147, 23);
+            this.amountElementsNumeric.Size = new System.Drawing.Size(210, 31);
             this.amountElementsNumeric.TabIndex = 39;
             this.amountElementsNumeric.Visible = false;
             // 
             // leftBorderNumeric
             // 
-            this.leftBorderNumeric.Location = new System.Drawing.Point(105, 138);
+            this.leftBorderNumeric.Location = new System.Drawing.Point(150, 230);
+            this.leftBorderNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.leftBorderNumeric.Name = "leftBorderNumeric";
-            this.leftBorderNumeric.Size = new System.Drawing.Size(58, 23);
+            this.leftBorderNumeric.Size = new System.Drawing.Size(83, 31);
             this.leftBorderNumeric.TabIndex = 40;
             this.leftBorderNumeric.Visible = false;
             // 
             // rightBorderNumeric
             // 
-            this.rightBorderNumeric.Location = new System.Drawing.Point(195, 138);
+            this.rightBorderNumeric.Location = new System.Drawing.Point(279, 230);
+            this.rightBorderNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rightBorderNumeric.Name = "rightBorderNumeric";
-            this.rightBorderNumeric.Size = new System.Drawing.Size(58, 23);
+            this.rightBorderNumeric.Size = new System.Drawing.Size(83, 31);
             this.rightBorderNumeric.TabIndex = 41;
             this.rightBorderNumeric.Visible = false;
             // 
             // manualInputForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(850, 500);
+            this.ClientSize = new System.Drawing.Size(1214, 833);
             this.Controls.Add(this.rightBorderNumeric);
             this.Controls.Add(this.leftBorderNumeric);
             this.Controls.Add(this.amountElementsNumeric);
@@ -525,6 +566,7 @@ namespace SortProject {
             this.Controls.Add(this.newItemNumeric);
             this.Controls.Add(this.enterArrayDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "manualInputForm";

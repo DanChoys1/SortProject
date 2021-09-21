@@ -11,6 +11,7 @@ using SelectionSort;
 using Sort;
 using BubbleSort;
 using QuickSort;
+using SortProject;
 
 namespace SortProject {
     public partial class manualInputForm : Form {
@@ -109,6 +110,10 @@ namespace SortProject {
                 while (enterArrayDataGridView.Columns.Count < sortArrayDataGridView.Columns.Count) {
                     sortArrayDataGridView.Columns.RemoveAt(sortArrayDataGridView.Columns.Count - 1);
                 }
+
+                Conclusion conclusion = new Conclusion();
+                
+                textBox1.Text = conclusion.WrittingConclusion(sorter);
             }
         }
 
