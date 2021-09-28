@@ -49,7 +49,6 @@ namespace SortProject {
             this.manualInputFormButton = new System.Windows.Forms.Button();
             this.randomInputFormButton = new System.Windows.Forms.Button();
             this.testButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,13 +63,13 @@ namespace SortProject {
             this.amountElementsNumeric = new System.Windows.Forms.NumericUpDown();
             this.leftBorderNumeric = new System.Windows.Forms.NumericUpDown();
             this.rightBorderNumeric = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deleteItemNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.premutationComparisonDataGridView)).BeginInit();
             this.sortingForGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountElementsNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftBorderNumeric)).BeginInit();
@@ -111,6 +110,7 @@ namespace SortProject {
             // 
             // enterButton
             // 
+            this.enterButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enterButton.Location = new System.Drawing.Point(299, 135);
             this.enterButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.enterButton.Name = "enterButton";
@@ -136,6 +136,7 @@ namespace SortProject {
             // 
             // sortButton
             // 
+            this.sortButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sortButton.Location = new System.Drawing.Point(101, 463);
             this.sortButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.sortButton.Name = "sortButton";
@@ -170,6 +171,7 @@ namespace SortProject {
             // 
             // deleteButton
             // 
+            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Location = new System.Drawing.Point(299, 225);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deleteButton.Name = "deleteButton";
@@ -313,7 +315,6 @@ namespace SortProject {
             // manualInputFormButton
             // 
             this.manualInputFormButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.manualInputFormButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("manualInputFormButton.BackgroundImage")));
             this.manualInputFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.manualInputFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.manualInputFormButton.Location = new System.Drawing.Point(0, 83);
@@ -321,12 +322,12 @@ namespace SortProject {
             this.manualInputFormButton.Name = "manualInputFormButton";
             this.manualInputFormButton.Size = new System.Drawing.Size(71, 250);
             this.manualInputFormButton.TabIndex = 20;
+            this.manualInputFormButton.Text = "Р\r\nУ\r\nЧ\r\nН\r\nО\r\nЙ";
             this.manualInputFormButton.UseVisualStyleBackColor = false;
             this.manualInputFormButton.Click += new System.EventHandler(this.manualInputFormButton_Click);
             // 
             // randomInputFormButton
             // 
-            this.randomInputFormButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("randomInputFormButton.BackgroundImage")));
             this.randomInputFormButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.randomInputFormButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.randomInputFormButton.Location = new System.Drawing.Point(0, 333);
@@ -334,12 +335,12 @@ namespace SortProject {
             this.randomInputFormButton.Name = "randomInputFormButton";
             this.randomInputFormButton.Size = new System.Drawing.Size(71, 250);
             this.randomInputFormButton.TabIndex = 21;
+            this.randomInputFormButton.Text = "Р\r\nА\r\nН\r\nД\r\nО\r\nМ\r\nН\r\nЫ\r\nЙ";
             this.randomInputFormButton.UseVisualStyleBackColor = true;
             this.randomInputFormButton.Click += new System.EventHandler(this.randomInputFormButton_Click);
             // 
             // testButton
             // 
-            this.testButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("testButton.BackgroundImage")));
             this.testButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.testButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.testButton.Location = new System.Drawing.Point(0, 583);
@@ -347,25 +348,13 @@ namespace SortProject {
             this.testButton.Name = "testButton";
             this.testButton.Size = new System.Drawing.Size(71, 250);
             this.testButton.TabIndex = 22;
+            this.testButton.Text = "Т\r\nЕ\r\nС\r\nТ\r\n";
             this.testButton.UseVisualStyleBackColor = true;
             this.testButton.Click += new System.EventHandler(this.testButton_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 83);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(71, 750);
-            this.pictureBox1.TabIndex = 23;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.ErrorImage")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
@@ -380,6 +369,7 @@ namespace SortProject {
             // 
             // textBox1
             // 
+            this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(476, 733);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -402,10 +392,10 @@ namespace SortProject {
             this.closeProgramButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeProgramButton.BackgroundImage")));
             this.closeProgramButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.closeProgramButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.closeProgramButton.Location = new System.Drawing.Point(1144, -2);
+            this.closeProgramButton.Location = new System.Drawing.Point(1181, 0);
             this.closeProgramButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closeProgramButton.Name = "closeProgramButton";
-            this.closeProgramButton.Size = new System.Drawing.Size(73, 85);
+            this.closeProgramButton.Size = new System.Drawing.Size(36, 36);
             this.closeProgramButton.TabIndex = 27;
             this.closeProgramButton.UseVisualStyleBackColor = true;
             this.closeProgramButton.Click += new System.EventHandler(this.closeProgramButton_Click);
@@ -457,6 +447,7 @@ namespace SortProject {
             // 
             // inputSortDescendingRandomArrButton
             // 
+            this.inputSortDescendingRandomArrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputSortDescendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputSortDescendingRandomArrButton.Location = new System.Drawing.Point(101, 662);
             this.inputSortDescendingRandomArrButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -470,6 +461,7 @@ namespace SortProject {
             // 
             // inputSortAscendingRandomArrButton
             // 
+            this.inputSortAscendingRandomArrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputSortAscendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputSortAscendingRandomArrButton.Location = new System.Drawing.Point(101, 557);
             this.inputSortAscendingRandomArrButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -483,6 +475,7 @@ namespace SortProject {
             // 
             // inputRandomArrButton
             // 
+            this.inputRandomArrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputRandomArrButton.Location = new System.Drawing.Point(101, 467);
             this.inputRandomArrButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -496,7 +489,7 @@ namespace SortProject {
             // 
             // amountElementsNumeric
             // 
-            this.amountElementsNumeric.Location = new System.Drawing.Point(150, 135);
+            this.amountElementsNumeric.Location = new System.Drawing.Point(152, 135);
             this.amountElementsNumeric.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.amountElementsNumeric.Maximum = new decimal(new int[] {
             -1981284352,
@@ -526,13 +519,24 @@ namespace SortProject {
             this.rightBorderNumeric.TabIndex = 41;
             this.rightBorderNumeric.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(551, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 54);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Sorting";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // manualInputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1214, 833);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.rightBorderNumeric);
             this.Controls.Add(this.leftBorderNumeric);
             this.Controls.Add(this.amountElementsNumeric);
@@ -550,7 +554,6 @@ namespace SortProject {
             this.Controls.Add(this.randomInputFormButton);
             this.Controls.Add(this.manualInputFormButton);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sortingForGroupBox);
             this.Controls.Add(this.label);
             this.Controls.Add(this.premutationComparisonDataGridView);
@@ -572,6 +575,7 @@ namespace SortProject {
             this.Name = "manualInputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SortProgram";
+            this.Load += new System.EventHandler(this.manualInputForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).EndInit();
@@ -579,7 +583,6 @@ namespace SortProject {
             ((System.ComponentModel.ISupportInitialize)(this.premutationComparisonDataGridView)).EndInit();
             this.sortingForGroupBox.ResumeLayout(false);
             this.sortingForGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountElementsNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.leftBorderNumeric)).EndInit();
@@ -612,7 +615,6 @@ namespace SortProject {
         private System.Windows.Forms.Button manualInputFormButton;
         private System.Windows.Forms.Button randomInputFormButton;
         private System.Windows.Forms.Button testButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
@@ -627,6 +629,7 @@ namespace SortProject {
         private System.Windows.Forms.NumericUpDown amountElementsNumeric;
         private System.Windows.Forms.NumericUpDown leftBorderNumeric;
         private System.Windows.Forms.NumericUpDown rightBorderNumeric;
+        private System.Windows.Forms.Label label2;
     }
 }
 

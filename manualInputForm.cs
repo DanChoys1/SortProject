@@ -21,17 +21,38 @@ namespace SortProject {
         public manualInputForm() {
             InitializeComponent();
 
-            newItemLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            deleteLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            enterTableLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            sortedArrayLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            label.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            label1.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            leftBorderLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            rightLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            selectionArrayBoundariesLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            amountElementsLabel.BackColor = ColorTranslator.FromHtml("#d7d6d4");
-            sortingForGroupBox.BackColor = ColorTranslator.FromHtml("#d7d6d4");
+            newItemLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            deleteLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            enterTableLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            sortedArrayLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            label.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            label1.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            leftBorderLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            rightLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            selectionArrayBoundariesLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            amountElementsLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            sortingForGroupBox.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            label2.BackColor = ColorTranslator.FromHtml("#6eb9ff");
+            enterButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            deleteButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            sortingForGroupBox.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            enterArrayDataGridView.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            sortArrayDataGridView.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            premutationComparisonDataGridView.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            inputRandomArrButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            inputSortAscendingRandomArrButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            inputSortDescendingRandomArrButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            textBox1.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            sortButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+
+            pictureBox3.BackColor = ColorTranslator.FromHtml("#6eb9ff");
+            manualInputFormButton.BackColor = ColorTranslator.FromHtml("#52abff");
+            randomInputFormButton.BackColor = ColorTranslator.FromHtml("#309bff");
+            testButton.BackColor = ColorTranslator.FromHtml("#0385ff");
+            this.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            
+
+ 
 
             premutationComparisonDataGridView.Rows.Add();
             premutationComparisonDataGridView.Rows.Add();
@@ -66,6 +87,9 @@ namespace SortProject {
                 }
 
             }
+
+            manualInputFormButton.BackColor = this.BackColor;
+            randomInputFormButton.BackColor = ColorTranslator.FromHtml("#309bff");
         }
 
         private void enterButton_Click(object sender, EventArgs e) {
@@ -154,6 +178,9 @@ namespace SortProject {
 
             }
 
+
+            randomInputFormButton.BackColor = this.BackColor;
+            manualInputFormButton.BackColor = ColorTranslator.FromHtml("#52abff");
         }
 
         private void inputRandomArrButton_Click(object sender, EventArgs e) {
@@ -230,12 +257,14 @@ namespace SortProject {
 
         private void testButton_Click(object sender, EventArgs e) {
             Test test = new Test();
-
+            testButton.BackColor = this.BackColor;
             if (test.Tests()) {
                 MessageBox.Show("Все тесты были пройдены.", "Тестирование");
             } else {
                 MessageBox.Show("Тестирование не было пройдено.", "Тестирование");
             }
+
+            testButton.BackColor = ColorTranslator.FromHtml("#0385ff");
         }
 
         private void closeProgramButton_Click(object sender, EventArgs e) {
@@ -271,6 +300,14 @@ namespace SortProject {
 
         private void pictureBox3_MouseUp(object sender, MouseEventArgs e) {
             bDragStatus = false;
+        }
+
+        private void manualInputForm_Load(object sender, EventArgs e) {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e) {
+
         }
     }
 }
