@@ -90,6 +90,16 @@ namespace SortProject {
 
             manualInputFormButton.BackColor = this.BackColor;
             randomInputFormButton.BackColor = ColorTranslator.FromHtml("#309bff");
+
+            enterTableLabel.Visible = true;
+            enterArrayDataGridView.Visible = true;
+            sortedArrayLabel.Visible = true;
+            sortArrayDataGridView.Visible = true;
+
+            label.Location = new Point(333, 260);
+            textBox1.Location = new Point(333, 440);
+            label1.Location = new Point(333, 422);
+            premutationComparisonDataGridView.Location = new Point(333, 278);
         }
 
         private void enterButton_Click(object sender, EventArgs e) {
@@ -181,6 +191,16 @@ namespace SortProject {
 
             randomInputFormButton.BackColor = this.BackColor;
             manualInputFormButton.BackColor = ColorTranslator.FromHtml("#52abff");
+
+            enterTableLabel.Visible = false;
+            enterArrayDataGridView.Visible = false;
+            sortedArrayLabel.Visible = false;
+            sortArrayDataGridView.Visible = false;
+
+            label1.Location = label.Location;
+            textBox1.Location = premutationComparisonDataGridView.Location;
+            label.Location = enterTableLabel.Location;
+            premutationComparisonDataGridView.Location = enterArrayDataGridView.Location;
         }
 
         private void inputRandomArrButton_Click(object sender, EventArgs e) {
