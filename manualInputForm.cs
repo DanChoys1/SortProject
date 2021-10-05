@@ -27,9 +27,6 @@ namespace SortProject {
             sortedArrayLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             label.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             label1.BackColor = ColorTranslator.FromHtml("#a4e6fc");
-            leftBorderLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
-            rightLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
-            selectionArrayBoundariesLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             amountElementsLabel.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             sortingForGroupBox.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             label2.BackColor = ColorTranslator.FromHtml("#6eb9ff");
@@ -68,8 +65,8 @@ namespace SortProject {
             Control[] manualInputObject = { newItemLabel, deleteLabel, enterButton, deleteButton,
                                             sortButton, newItemNumeric, deleteItemNumeric};
 
-            Control[] randomInputObject = { amountElementsLabel, selectionArrayBoundariesLabel, rightLabel,
-                                            leftBorderLabel, amountElementsNumeric, leftBorderNumeric, rightBorderNumeric,
+            Control[] randomInputObject = { amountElementsLabel, 
+                                            amountElementsNumeric,
                                             inputRandomArrButton, inputSortAscendingRandomArrButton, inputSortDescendingRandomArrButton};
 
             for (int i = 0; i < randomInputObject.Length; i++) {
@@ -95,11 +92,14 @@ namespace SortProject {
             enterArrayDataGridView.Visible = true;
             sortedArrayLabel.Visible = true;
             sortArrayDataGridView.Visible = true;
+            button1.Visible = false;
+            trackBar1.Visible = false;
 
             label.Location = new Point(333, 260);
             textBox1.Location = new Point(333, 440);
             label1.Location = new Point(333, 422);
             premutationComparisonDataGridView.Location = new Point(333, 278);
+            sortingForGroupBox.Location = new Point(71, 177);
         }
 
         private void enterButton_Click(object sender, EventArgs e) {
@@ -168,8 +168,8 @@ namespace SortProject {
             Control[] manualInputObject = { newItemLabel, deleteLabel, enterButton, deleteButton,
                                             sortButton, newItemNumeric, deleteItemNumeric};
 
-            Control[] randomInputObject = { amountElementsLabel, selectionArrayBoundariesLabel, rightLabel,
-                                            leftBorderLabel, amountElementsNumeric, leftBorderNumeric, rightBorderNumeric,
+            Control[] randomInputObject = { amountElementsLabel, 
+                                             amountElementsNumeric,  
                                             inputRandomArrButton, inputSortAscendingRandomArrButton, inputSortDescendingRandomArrButton};
 
             for (int i = 0; i < manualInputObject.Length; i++) {
@@ -196,11 +196,14 @@ namespace SortProject {
             enterArrayDataGridView.Visible = false;
             sortedArrayLabel.Visible = false;
             sortArrayDataGridView.Visible = false;
+            button1.Visible = true;
+            trackBar1.Visible = true;
 
             label1.Location = label.Location;
             textBox1.Location = premutationComparisonDataGridView.Location;
             label.Location = enterTableLabel.Location;
             premutationComparisonDataGridView.Location = enterArrayDataGridView.Location;
+            sortingForGroupBox.Location = deleteLabel.Location;
         }
 
         private void inputRandomArrButton_Click(object sender, EventArgs e) {
@@ -215,7 +218,7 @@ namespace SortProject {
             }
 
             for (int i = 0; i < amountElementsNumeric.Value; i++) {
-                arr.Add(rand.Next(Convert.ToInt32(leftBorderNumeric.Value), Convert.ToInt32(rightBorderNumeric.Value) + 1));
+                arr.Add(rand.Next());
 
                 enterArrayDataGridView.Columns.Add("Column" + arr.Count.ToString(), arr.Count.ToString());
                 enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
@@ -236,7 +239,7 @@ namespace SortProject {
             }
 
             for (int i = 0; i < amountElementsNumeric.Value; i++) {
-                arr.Add(rand.Next(Convert.ToInt32(leftBorderNumeric.Value), Convert.ToInt32(rightBorderNumeric.Value) + 1));
+                arr.Add(rand.Next());
             }
 
             arr.Sort();
@@ -261,7 +264,7 @@ namespace SortProject {
             }
 
             for (int i = 0; i < amountElementsNumeric.Value; i++) {
-                arr.Add(rand.Next(Convert.ToInt32(leftBorderNumeric.Value), Convert.ToInt32(rightBorderNumeric.Value) + 1));
+                arr.Add(rand.Next());
             }
 
             arr.Sort();
@@ -322,12 +325,41 @@ namespace SortProject {
             bDragStatus = false;
         }
 
-        private void manualInputForm_Load(object sender, EventArgs e) {
+        private void button1_Click(object sender, EventArgs e) {
+            Random rand = new Random();
 
-        }
+            if (arr.Count > 0) {
+                arr.Clear();
+            }
 
-        private void label2_Click(object sender, EventArgs e) {
 
+            if (enterArrayDataGridView.Columns.Count > 0) {
+                enterArrayDataGridView.Columns.Clear();
+            }
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                arr.Add(rand.Next(-100, 100));
+            }
+
+            arr.Sort();
+            int prosent = Convert.ToInt32(arr.Count() * (trackBar1.Value * 0.01));
+
+            if (prosent > 1) {
+                prosent /= 2;
+            }
+
+            for (int i = 0; i < prosent; i++) {
+                int tmp = arr[arr.Count - 1 - i];
+                arr[arr.Count - 1 - i] = arr[i];
+                arr[i] = tmp;
+            }
+
+            for (int i = 0; i < amountElementsNumeric.Value; i++) {
+                enterArrayDataGridView.Columns.Add("Column" + i.ToString(), i.ToString());
+                enterArrayDataGridView.Rows[0].Cells[i].Value = arr[i];
+            }
+
+            sortButton_Click(sender, e);
         }
     }
 }

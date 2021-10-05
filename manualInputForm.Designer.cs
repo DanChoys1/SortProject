@@ -53,17 +53,14 @@ namespace SortProject {
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.closeProgramButton = new System.Windows.Forms.Button();
-            this.leftBorderLabel = new System.Windows.Forms.Label();
-            this.rightLabel = new System.Windows.Forms.Label();
-            this.selectionArrayBoundariesLabel = new System.Windows.Forms.Label();
-            this.amountElementsLabel = new System.Windows.Forms.Label();
             this.inputSortDescendingRandomArrButton = new System.Windows.Forms.Button();
             this.inputSortAscendingRandomArrButton = new System.Windows.Forms.Button();
             this.inputRandomArrButton = new System.Windows.Forms.Button();
-            this.amountElementsNumeric = new System.Windows.Forms.NumericUpDown();
-            this.leftBorderNumeric = new System.Windows.Forms.NumericUpDown();
-            this.rightBorderNumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.amountElementsLabel = new System.Windows.Forms.Label();
+            this.amountElementsNumeric = new System.Windows.Forms.NumericUpDown();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).BeginInit();
@@ -72,8 +69,7 @@ namespace SortProject {
             this.sortingForGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountElementsNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftBorderNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightBorderNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // enterArrayDataGridView
@@ -371,52 +367,11 @@ namespace SortProject {
             this.closeProgramButton.UseVisualStyleBackColor = true;
             this.closeProgramButton.Click += new System.EventHandler(this.closeProgramButton_Click);
             // 
-            // leftBorderLabel
-            // 
-            this.leftBorderLabel.AutoSize = true;
-            this.leftBorderLabel.Location = new System.Drawing.Point(80, 140);
-            this.leftBorderLabel.Name = "leftBorderLabel";
-            this.leftBorderLabel.Size = new System.Drawing.Size(19, 15);
-            this.leftBorderLabel.TabIndex = 38;
-            this.leftBorderLabel.Text = "от";
-            this.leftBorderLabel.Visible = false;
-            // 
-            // rightLabel
-            // 
-            this.rightLabel.AutoSize = true;
-            this.rightLabel.Location = new System.Drawing.Point(169, 140);
-            this.rightLabel.Name = "rightLabel";
-            this.rightLabel.Size = new System.Drawing.Size(20, 15);
-            this.rightLabel.TabIndex = 37;
-            this.rightLabel.Text = "до";
-            this.rightLabel.Visible = false;
-            // 
-            // selectionArrayBoundariesLabel
-            // 
-            this.selectionArrayBoundariesLabel.AutoSize = true;
-            this.selectionArrayBoundariesLabel.Location = new System.Drawing.Point(71, 118);
-            this.selectionArrayBoundariesLabel.Name = "selectionArrayBoundariesLabel";
-            this.selectionArrayBoundariesLabel.Size = new System.Drawing.Size(236, 15);
-            this.selectionArrayBoundariesLabel.TabIndex = 36;
-            this.selectionArrayBoundariesLabel.Text = "Выберите границы значечний элементов";
-            this.selectionArrayBoundariesLabel.Visible = false;
-            // 
-            // amountElementsLabel
-            // 
-            this.amountElementsLabel.AutoSize = true;
-            this.amountElementsLabel.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.amountElementsLabel.Location = new System.Drawing.Point(71, 63);
-            this.amountElementsLabel.Name = "amountElementsLabel";
-            this.amountElementsLabel.Size = new System.Drawing.Size(213, 15);
-            this.amountElementsLabel.TabIndex = 35;
-            this.amountElementsLabel.Text = "Выберите кол-во элементов массива";
-            this.amountElementsLabel.Visible = false;
-            // 
             // inputSortDescendingRandomArrButton
             // 
             this.inputSortDescendingRandomArrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputSortDescendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputSortDescendingRandomArrButton.Location = new System.Drawing.Point(71, 397);
+            this.inputSortDescendingRandomArrButton.Location = new System.Drawing.Point(71, 323);
             this.inputSortDescendingRandomArrButton.Name = "inputSortDescendingRandomArrButton";
             this.inputSortDescendingRandomArrButton.Size = new System.Drawing.Size(236, 57);
             this.inputSortDescendingRandomArrButton.TabIndex = 31;
@@ -429,7 +384,7 @@ namespace SortProject {
             // 
             this.inputSortAscendingRandomArrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputSortAscendingRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputSortAscendingRandomArrButton.Location = new System.Drawing.Point(71, 334);
+            this.inputSortAscendingRandomArrButton.Location = new System.Drawing.Point(71, 260);
             this.inputSortAscendingRandomArrButton.Name = "inputSortAscendingRandomArrButton";
             this.inputSortAscendingRandomArrButton.Size = new System.Drawing.Size(236, 57);
             this.inputSortAscendingRandomArrButton.TabIndex = 30;
@@ -442,7 +397,7 @@ namespace SortProject {
             // 
             this.inputRandomArrButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inputRandomArrButton.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputRandomArrButton.Location = new System.Drawing.Point(71, 280);
+            this.inputRandomArrButton.Location = new System.Drawing.Point(71, 206);
             this.inputRandomArrButton.Name = "inputRandomArrButton";
             this.inputRandomArrButton.Size = new System.Drawing.Size(236, 48);
             this.inputRandomArrButton.TabIndex = 29;
@@ -450,6 +405,39 @@ namespace SortProject {
             this.inputRandomArrButton.UseVisualStyleBackColor = true;
             this.inputRandomArrButton.Visible = false;
             this.inputRandomArrButton.Click += new System.EventHandler(this.inputRandomArrButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(386, 5);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(103, 37);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Sorting";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(71, 386);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(236, 57);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // amountElementsLabel
+            // 
+            this.amountElementsLabel.AutoSize = true;
+            this.amountElementsLabel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.amountElementsLabel.Location = new System.Drawing.Point(71, 63);
+            this.amountElementsLabel.Name = "amountElementsLabel";
+            this.amountElementsLabel.Size = new System.Drawing.Size(213, 15);
+            this.amountElementsLabel.TabIndex = 35;
+            this.amountElementsLabel.Text = "Выберите кол-во элементов массива";
+            this.amountElementsLabel.Visible = false;
             // 
             // amountElementsNumeric
             // 
@@ -464,53 +452,14 @@ namespace SortProject {
             this.amountElementsNumeric.TabIndex = 39;
             this.amountElementsNumeric.Visible = false;
             // 
-            // leftBorderNumeric
+            // trackBar1
             // 
-            this.leftBorderNumeric.Location = new System.Drawing.Point(105, 138);
-            this.leftBorderNumeric.Maximum = new decimal(new int[] {
-            -1981284352,
-            -1966660860,
-            0,
-            0});
-            this.leftBorderNumeric.Minimum = new decimal(new int[] {
-            -1981284352,
-            -1966660860,
-            0,
-            -2147483648});
-            this.leftBorderNumeric.Name = "leftBorderNumeric";
-            this.leftBorderNumeric.Size = new System.Drawing.Size(58, 23);
-            this.leftBorderNumeric.TabIndex = 40;
-            this.leftBorderNumeric.Visible = false;
-            // 
-            // rightBorderNumeric
-            // 
-            this.rightBorderNumeric.Location = new System.Drawing.Point(195, 138);
-            this.rightBorderNumeric.Maximum = new decimal(new int[] {
-            -1981284352,
-            -1966660860,
-            0,
-            0});
-            this.rightBorderNumeric.Minimum = new decimal(new int[] {
-            -1981284352,
-            -1966660860,
-            0,
-            -2147483648});
-            this.rightBorderNumeric.Name = "rightBorderNumeric";
-            this.rightBorderNumeric.Size = new System.Drawing.Size(58, 23);
-            this.rightBorderNumeric.TabIndex = 41;
-            this.rightBorderNumeric.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(386, 5);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 37);
-            this.label2.TabIndex = 42;
-            this.label2.Text = "Sorting";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.trackBar1.Location = new System.Drawing.Point(71, 450);
+            this.trackBar1.Maximum = 100;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(236, 45);
+            this.trackBar1.TabIndex = 44;
+            this.trackBar1.Visible = false;
             // 
             // manualInputForm
             // 
@@ -518,13 +467,10 @@ namespace SortProject {
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(850, 500);
+            this.Controls.Add(this.trackBar1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.rightBorderNumeric);
-            this.Controls.Add(this.leftBorderNumeric);
             this.Controls.Add(this.amountElementsNumeric);
-            this.Controls.Add(this.leftBorderLabel);
-            this.Controls.Add(this.rightLabel);
-            this.Controls.Add(this.selectionArrayBoundariesLabel);
             this.Controls.Add(this.amountElementsLabel);
             this.Controls.Add(this.inputSortDescendingRandomArrButton);
             this.Controls.Add(this.inputSortAscendingRandomArrButton);
@@ -556,7 +502,6 @@ namespace SortProject {
             this.Name = "manualInputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SortProgram";
-            this.Load += new System.EventHandler(this.manualInputForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.enterArrayDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.newItemNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortArrayDataGridView)).EndInit();
@@ -566,8 +511,7 @@ namespace SortProject {
             this.sortingForGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.amountElementsNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leftBorderNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rightBorderNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -600,17 +544,14 @@ namespace SortProject {
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button closeProgramButton;
-        private System.Windows.Forms.Label leftBorderLabel;
-        private System.Windows.Forms.Label rightLabel;
-        private System.Windows.Forms.Label selectionArrayBoundariesLabel;
-        private System.Windows.Forms.Label amountElementsLabel;
         private System.Windows.Forms.Button inputSortDescendingRandomArrButton;
         private System.Windows.Forms.Button inputSortAscendingRandomArrButton;
         private System.Windows.Forms.Button inputRandomArrButton;
-        private System.Windows.Forms.NumericUpDown amountElementsNumeric;
-        private System.Windows.Forms.NumericUpDown leftBorderNumeric;
-        private System.Windows.Forms.NumericUpDown rightBorderNumeric;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label amountElementsLabel;
+        private System.Windows.Forms.NumericUpDown amountElementsNumeric;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 
