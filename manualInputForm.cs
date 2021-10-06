@@ -41,6 +41,7 @@ namespace SortProject {
             inputSortDescendingRandomArrButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             textBox1.BackColor = ColorTranslator.FromHtml("#a4e6fc");
             sortButton.BackColor = ColorTranslator.FromHtml("#a4e6fc");
+            button1.BackColor = ColorTranslator.FromHtml("#a4e6fc");
 
             pictureBox3.BackColor = ColorTranslator.FromHtml("#6eb9ff");
             manualInputFormButton.BackColor = ColorTranslator.FromHtml("#52abff");
